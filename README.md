@@ -22,10 +22,85 @@ This project contains a simple 2D game scene developed using the CEngine game en
 2. and run the Starter.java class for testing the engine. If you can open the test game and run it then there should be no problem.
 
 ## How to Start
-1. create a main class for your game.
-2. make it implements CEComponent
-3. if you want a logger you can add by implementing HasLogger.
+1.create your main game class. you can implement HasLogger to let engine use your logger to log important things.
+```java
+public class MainGame implements CEComponent, HasLogger {
+    @Override
+    public void init() {
+        
+    }
 
+    @Override
+    public void loop() {
+
+    }
+
+    @Override
+    public void dispose() {
+
+    }
+
+    @Override
+    public CLogger getLogger() {
+        return CLoggerSystem.logger(this.getClass());
+    }
+}
+```
+2. add your component to engine before running and run.
+```java
+   public class Starter {
+   public static void main(String[] args) {
+   CEngine.setParentPublicComponent(new MainGame());
+   CEngine.ENGINE.run();
+   }
+   }
+```
+3. create the scene class
+```java
+public class MainGameScene1 extends CEScene {
+    @Override
+    public void init() {
+        super.init();
+    }
+    @Override
+    public void update(double dt) {
+        super.update(dt);
+    }
+
+    @Override
+    public String getName() {
+        return "Scene_1";
+    }
+}
+
+
+```
+
+4. set scene
+```java
+public class MainGame implements CEComponent, HasLogger {
+    @Override
+    public void init() {
+        CEngine.SCENE.setScene(new MainGameScene1());
+    }
+
+    @Override
+    public void loop() {
+
+    }
+
+    @Override
+    public void dispose() {
+
+    }
+
+    @Override
+    public CLogger getLogger() {
+        return CLoggerSystem.logger(this.getClass());
+    }
+}
+```
+5. see the example in the io.github.cakilgan.game package.
 ## To-Do
 
 - Add more game scenes.
