@@ -103,7 +103,7 @@ public class MainGame implements CEComponent, HasLogger {
 5. see the example in the io.github.cakilgan.game package.
 ## To-Do
 
-- Add more game scenes.
+- Add more game examples.
 - Implement sound management.
 - Improve physics performance.
 - Improve Animation System and fix the delay issue.
