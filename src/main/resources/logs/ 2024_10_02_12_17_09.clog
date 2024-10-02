@@ -1,0 +1,676 @@
+
+
+{2024$10/02/12/14;::;12.14.21.558+03:00}--[cakilgan;::;CLogger]--[CEngine]--(INFO)--cengine/start#--> ;
+{2024$10/02/12/14;::;12.14.21.614+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) --< resources.sch to console_style.css
+{2024$10/02/12/14;::;12.14.21.615+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) --< resources.sch to resources.sch
+{2024$10/02/12/14;::;12.14.21.616+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found schema file for src/main/resources
+{2024$10/02/12/14;::;12.14.21.656+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\resources.sch
+{2024$10/02/12/14;::;12.14.21.658+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\resources.sch
+{2024$10/02/12/14;::;12.14.21.659+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.21.661+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.21.662+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.21.670+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: logs
+{2024$10/02/12/14;::;12.14.21.672+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: engine
+{2024$10/02/12/14;::;12.14.21.672+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: engine/assets
+{2024$10/02/12/14;::;12.14.21.673+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: engine/assets/textures
+{2024$10/02/12/14;::;12.14.21.674+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: engine/data
+{2024$10/02/12/14;::;12.14.21.674+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: engine/data/shaders
+{2024$10/02/12/14;::;12.14.21.675+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: game
+{2024$10/02/12/14;::;12.14.21.676+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: game/assets
+{2024$10/02/12/14;::;12.14.21.677+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: game/data
+{2024$10/02/12/14;::;12.14.21.678+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/14;::;12.14.21.678+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) logs engine engine/assets engine/assets/textures engine/data engine/data/shaders game game/assets game/data
+{2024$10/02/12/14;::;12.14.21.682+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: engine/data/shaders
+{2024$10/02/12/14;::;12.14.21.683+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: vertex.vert
+{2024$10/02/12/14;::;12.14.21.684+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/14;::;12.14.21.685+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) engine/data/shaders vertex.vert
+{2024$10/02/12/14;::;12.14.21.690+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: engine/data/shaders
+{2024$10/02/12/14;::;12.14.21.692+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: fragment.frag
+{2024$10/02/12/14;::;12.14.21.692+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/14;::;12.14.21.693+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) engine/data/shaders fragment.frag
+{2024$10/02/12/14;::;12.14.21.697+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) reading schema file -> true
+{2024$10/02/12/14;::;12.14.21.711+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.711+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.712+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.712+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\logs path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.713+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\assets path: src\main\resources\engine\data
+{2024$10/02/12/14;::;12.14.21.713+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data path: src\main\resources\engine\data
+{2024$10/02/12/14;::;12.14.21.714+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.715+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data\map path: src\main\resources\engine\data\shaders
+{2024$10/02/12/14;::;12.14.21.716+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data\shaders path: src\main\resources\engine\data\shaders
+{2024$10/02/12/14;::;12.14.21.716+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.719+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\bfragment.frag testfile: vertex.vert
+{2024$10/02/12/14;::;12.14.21.721+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\bvertex.vert testfile: vertex.vert
+{2024$10/02/12/14;::;12.14.21.722+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\dfragment.frag testfile: vertex.vert
+{2024$10/02/12/14;::;12.14.21.722+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\dvertex.vert testfile: vertex.vert
+{2024$10/02/12/14;::;12.14.21.723+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\fragment.frag testfile: vertex.vert
+{2024$10/02/12/14;::;12.14.21.723+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\vertex.vert testfile: vertex.vert
+{2024$10/02/12/14;::;12.14.21.724+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.724+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.725+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.725+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\logs path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.726+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\assets path: src\main\resources\engine\data
+{2024$10/02/12/14;::;12.14.21.726+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data path: src\main\resources\engine\data
+{2024$10/02/12/14;::;12.14.21.727+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.727+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data\map path: src\main\resources\engine\data\shaders
+{2024$10/02/12/14;::;12.14.21.728+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data\shaders path: src\main\resources\engine\data\shaders
+{2024$10/02/12/14;::;12.14.21.728+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.729+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\bfragment.frag testfile: fragment.frag
+{2024$10/02/12/14;::;12.14.21.729+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\bvertex.vert testfile: fragment.frag
+{2024$10/02/12/14;::;12.14.21.730+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\dfragment.frag testfile: fragment.frag
+{2024$10/02/12/14;::;12.14.21.731+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\dvertex.vert testfile: fragment.frag
+{2024$10/02/12/14;::;12.14.21.731+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\fragment.frag testfile: fragment.frag
+{2024$10/02/12/14;::;12.14.21.732+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\vertex.vert testfile: fragment.frag
+{2024$10/02/12/14;::;12.14.21.739+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.741+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.741+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.742+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\logs path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.742+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\assets path: src\main\resources\engine\data
+{2024$10/02/12/14;::;12.14.21.743+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data path: src\main\resources\engine\data
+{2024$10/02/12/14;::;12.14.21.743+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.743+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data\map path: src\main\resources\engine\data\shaders
+{2024$10/02/12/14;::;12.14.21.744+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data\shaders path: src\main\resources\engine\data\shaders
+{2024$10/02/12/14;::;12.14.21.744+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.745+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\bfragment.frag testfile: bvertex.vert
+{2024$10/02/12/14;::;12.14.21.745+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\bvertex.vert testfile: bvertex.vert
+{2024$10/02/12/14;::;12.14.21.746+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\dfragment.frag testfile: bvertex.vert
+{2024$10/02/12/14;::;12.14.21.748+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\dvertex.vert testfile: bvertex.vert
+{2024$10/02/12/14;::;12.14.21.748+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\fragment.frag testfile: bvertex.vert
+{2024$10/02/12/14;::;12.14.21.749+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\vertex.vert testfile: bvertex.vert
+{2024$10/02/12/14;::;12.14.21.749+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.750+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.751+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.751+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\logs path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.752+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\assets path: src\main\resources\engine\data
+{2024$10/02/12/14;::;12.14.21.752+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data path: src\main\resources\engine\data
+{2024$10/02/12/14;::;12.14.21.753+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.753+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data\map path: src\main\resources\engine\data\shaders
+{2024$10/02/12/14;::;12.14.21.754+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data\shaders path: src\main\resources\engine\data\shaders
+{2024$10/02/12/14;::;12.14.21.754+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.755+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\bfragment.frag testfile: bfragment.frag
+{2024$10/02/12/14;::;12.14.21.755+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\bvertex.vert testfile: bfragment.frag
+{2024$10/02/12/14;::;12.14.21.756+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\dfragment.frag testfile: bfragment.frag
+{2024$10/02/12/14;::;12.14.21.756+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\dvertex.vert testfile: bfragment.frag
+{2024$10/02/12/14;::;12.14.21.756+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\fragment.frag testfile: bfragment.frag
+{2024$10/02/12/14;::;12.14.21.757+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\vertex.vert testfile: bfragment.frag
+{2024$10/02/12/14;::;12.14.21.757+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.758+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.758+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.759+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\logs path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.759+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\assets path: src\main\resources\engine\data
+{2024$10/02/12/14;::;12.14.21.759+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data path: src\main\resources\engine\data
+{2024$10/02/12/14;::;12.14.21.760+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.760+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data\map path: src\main\resources\engine\data\shaders
+{2024$10/02/12/14;::;12.14.21.760+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data\shaders path: src\main\resources\engine\data\shaders
+{2024$10/02/12/14;::;12.14.21.760+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.762+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\bfragment.frag testfile: dvertex.vert
+{2024$10/02/12/14;::;12.14.21.763+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\bvertex.vert testfile: dvertex.vert
+{2024$10/02/12/14;::;12.14.21.763+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\dfragment.frag testfile: dvertex.vert
+{2024$10/02/12/14;::;12.14.21.764+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\dvertex.vert testfile: dvertex.vert
+{2024$10/02/12/14;::;12.14.21.764+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\fragment.frag testfile: dvertex.vert
+{2024$10/02/12/14;::;12.14.21.764+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\vertex.vert testfile: dvertex.vert
+{2024$10/02/12/14;::;12.14.21.765+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.765+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.766+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.766+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\logs path: src\main\resources\engine
+{2024$10/02/12/14;::;12.14.21.766+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\assets path: src\main\resources\engine\data
+{2024$10/02/12/14;::;12.14.21.767+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data path: src\main\resources\engine\data
+{2024$10/02/12/14;::;12.14.21.767+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.769+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data\map path: src\main\resources\engine\data\shaders
+{2024$10/02/12/14;::;12.14.21.769+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine\data\shaders path: src\main\resources\engine\data\shaders
+{2024$10/02/12/14;::;12.14.21.770+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.21.770+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\bfragment.frag testfile: dfragment.frag
+{2024$10/02/12/14;::;12.14.21.771+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\bvertex.vert testfile: dfragment.frag
+{2024$10/02/12/14;::;12.14.21.772+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\dfragment.frag testfile: dfragment.frag
+{2024$10/02/12/14;::;12.14.21.772+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\dvertex.vert testfile: dfragment.frag
+{2024$10/02/12/14;::;12.14.21.773+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\fragment.frag testfile: dfragment.frag
+{2024$10/02/12/14;::;12.14.21.773+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\engine\data\shaders\vertex.vert testfile: dfragment.frag
+{2024$10/02/12/14;::;12.14.21.793+03:00}--[cakilgan;::;CLogger]--[CEngine]--(INFO)--cengine/init#--> started
+{2024$10/02/12/14;::;12.14.21.806+03:00}--[cakilgan;::;CLogger]--[CEngine]--(LIFECYCLE)--common/comp_system$--> [CEngine]--:CEngineLogger; (0)
+{2024$10/02/12/14;::;12.14.21.806+03:00}--[cakilgan;::;CLogger]--[CEngine]--(LIFECYCLE)--common/comp_system$--> [CEngine]--:CEWindow; (1)
+{2024$10/02/12/14;::;12.14.21.807+03:00}--[cakilgan;::;CLogger]--[CEngine]--(LIFECYCLE)--common/comp_system$--> [CEngine]--:CEMouseCallback; (2)
+{2024$10/02/12/14;::;12.14.21.808+03:00}--[cakilgan;::;CLogger]--[CEngine]--(LIFECYCLE)--common/comp_system$--> [CEngine]--:CEKeyCallback; (3)
+{2024$10/02/12/14;::;12.14.21.808+03:00}--[cakilgan;::;CLogger]--[CEngine]--(LIFECYCLE)--common/comp_system$--> [CEngine]--:CEResourceManager; (4)
+{2024$10/02/12/14;::;12.14.21.808+03:00}--[cakilgan;::;CLogger]--[CEngine]--(LIFECYCLE)--common/comp_system$--> [CEngine]--:CETime; (5)
+{2024$10/02/12/14;::;12.14.21.809+03:00}--[cakilgan;::;CLogger]--[CEngine]--(LIFECYCLE)--common/comp_system$--> [CEngine]--:CESceneSystem; (6)
+{2024$10/02/12/14;::;12.14.21.809+03:00}--[cakilgan;::;CLogger]--[CEngine]--(LIFECYCLE)--common/comp_system$--> [CEngine]--:CEConsole; (7)
+{2024$10/02/12/14;::;12.14.21.810+03:00}--[cakilgan;::;CLogger]--[CEngine]--(LIFECYCLE)--common/comp_system$--> [CEngine]--:CGShader; (8)
+{2024$10/02/12/14;::;12.14.21.810+03:00}--[cakilgan;::;CLogger]--[CEngine]--(LIFECYCLE)--common/comp_system$--> [CEngine]--:CGShader; (9)
+{2024$10/02/12/14;::;12.14.21.811+03:00}--[cakilgan;::;CLogger]--[CEngine]--(LIFECYCLE)--common/comp_system$--> [CEngine]--:CGShader; (10)
+{2024$10/02/12/14;::;12.14.22.359+03:00}--[cakilgan;::;CLogger]--[CEWindow]--(DEBUG) window hint: 131076 set to 0
+{2024$10/02/12/14;::;12.14.22.360+03:00}--[cakilgan;::;CLogger]--[CEWindow]--(DEBUG) window hint: 131075 set to 1
+{2024$10/02/12/14;::;12.14.22.759+03:00}--[cakilgan;::;CLogger]--[CEWindow]--(DEBUG) window creating with 1920 1080 CEngine
+{2024$10/02/12/14;::;12.14.23.228+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) created shader program --> id: 1
+{2024$10/02/12/14;::;12.14.23.230+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\engine\data\shaders\vertex.vert
+{2024$10/02/12/14;::;12.14.23.232+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.232+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.232+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.239+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\engine\data\shaders\vertex.vert
+{2024$10/02/12/14;::;12.14.23.240+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.241+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.241+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.247+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) binding shader source -> 
+#version 330 core
+layout (location = 0) in vec3 aPos; // position has attribute position 0
+layout (location = 1) in vec2 texCoords;
+uniform mat4 projection;
+uniform mat4 view;
+uniform mat4 model;
+out vec2 TexCoord;
+void main()
+{
+gl_Position = projection*view*model*vec4(aPos.xyz, 1);
+TexCoord = texCoords;
+}
+ to shader -> 2
+{2024$10/02/12/14;::;12.14.23.248+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) compiling shader -> 2
+{2024$10/02/12/14;::;12.14.23.314+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) attached shader -> 2 to shaderProgram -> 1
+{2024$10/02/12/14;::;12.14.23.314+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\engine\data\shaders\fragment.frag
+{2024$10/02/12/14;::;12.14.23.315+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.315+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.316+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.317+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\engine\data\shaders\fragment.frag
+{2024$10/02/12/14;::;12.14.23.319+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.319+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.320+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.321+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) binding shader source -> 
+#version 330 core
+out vec4 FragColor;
+uniform sampler2D _texture;
+in vec2 TexCoord;
+void main()
+{
+FragColor = texture(_texture,TexCoord);
+}
+ to shader -> 3
+{2024$10/02/12/14;::;12.14.23.322+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) compiling shader -> 3
+{2024$10/02/12/14;::;12.14.23.324+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) attached shader -> 3 to shaderProgram -> 1
+{2024$10/02/12/14;::;12.14.23.325+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) linking program.
+{2024$10/02/12/14;::;12.14.23.326+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) created shader program --> id: 4
+{2024$10/02/12/14;::;12.14.23.326+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\engine\data\shaders\bvertex.vert
+{2024$10/02/12/14;::;12.14.23.328+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.328+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.329+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.331+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\engine\data\shaders\bvertex.vert
+{2024$10/02/12/14;::;12.14.23.332+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.332+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.333+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.335+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) binding shader source -> 
+#version 460 core
+layout (location=0) in vec3 aPos;
+layout (location=1) in vec4 aColor;
+layout (location=2) in vec2 aTCoords;
+layout (location=3) in float aTID;
+
+uniform mat4 uProjection;
+uniform mat4 uView;
+
+
+out vec4 fColor;
+out vec2 oTCoords;
+out float oTID;
+
+
+void main()
+{
+    fColor = aColor;
+    oTCoords = aTCoords;
+    oTID = aTID;
+    gl_Position =uProjection * uView * vec4(aPos, 1.0);
+}
+ to shader -> 5
+{2024$10/02/12/14;::;12.14.23.335+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) compiling shader -> 5
+{2024$10/02/12/14;::;12.14.23.472+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) attached shader -> 5 to shaderProgram -> 4
+{2024$10/02/12/14;::;12.14.23.473+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\engine\data\shaders\bfragment.frag
+{2024$10/02/12/14;::;12.14.23.475+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.475+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.476+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.480+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\engine\data\shaders\bfragment.frag
+{2024$10/02/12/14;::;12.14.23.482+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.482+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.483+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.485+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) binding shader source -> 
+#version 460 core
+
+in vec4 fColor;
+in vec2 oTCoords;
+in float oTID;
+uniform sampler2D uTex_a[8];
+out vec4 color;
+
+void main()
+{
+    if(oTID>0)
+    {
+        int id = int(oTID);
+        color = fColor*texture(uTex_a[id],oTCoords);
+    }
+    else
+    {
+        color = fColor;
+    }
+}
+ to shader -> 6
+{2024$10/02/12/14;::;12.14.23.486+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) compiling shader -> 6
+{2024$10/02/12/14;::;12.14.23.489+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) attached shader -> 6 to shaderProgram -> 4
+{2024$10/02/12/14;::;12.14.23.489+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) linking program.
+{2024$10/02/12/14;::;12.14.23.489+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) created shader program --> id: 7
+{2024$10/02/12/14;::;12.14.23.490+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\engine\data\shaders\dvertex.vert
+{2024$10/02/12/14;::;12.14.23.493+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.494+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.495+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.498+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\engine\data\shaders\dvertex.vert
+{2024$10/02/12/14;::;12.14.23.501+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.501+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.502+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.505+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) binding shader source -> 
+#version 460 core
+layout (location=0) in vec3 aPos;
+layout (location=1) in vec4 aColor;
+layout (location=2) in vec2 aTCoords;
+layout (location=3) in float aTID;
+
+uniform mat4 uProjection;
+uniform mat4 uView;
+
+
+out vec4 fColor;
+out vec2 oTCoords;
+out float oTID;
+
+
+void main()
+{
+    fColor = aColor;
+    oTCoords = aTCoords;
+    oTID = aTID;
+    gl_Position =uProjection * uView * vec4(aPos, 1.0);
+}
+ to shader -> 8
+{2024$10/02/12/14;::;12.14.23.506+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) compiling shader -> 8
+{2024$10/02/12/14;::;12.14.23.506+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) attached shader -> 8 to shaderProgram -> 7
+{2024$10/02/12/14;::;12.14.23.506+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\engine\data\shaders\dfragment.frag
+{2024$10/02/12/14;::;12.14.23.508+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.508+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.510+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.512+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\engine\data\shaders\dfragment.frag
+{2024$10/02/12/14;::;12.14.23.514+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.514+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.515+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.517+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) binding shader source -> 
+#version 460 core
+
+in vec4 fColor;
+in vec2 oTCoords;
+in float oTID;
+uniform sampler2D uTex_a[8];
+out vec4 color;
+
+void main()
+{
+    if(oTID>0)
+    {
+        int id = int(oTID);
+        color = fColor*texture(uTex_a[id],oTCoords);
+    }
+    else
+    {
+        color = fColor;
+    }
+
+}
+ to shader -> 9
+{2024$10/02/12/14;::;12.14.23.517+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) compiling shader -> 9
+{2024$10/02/12/14;::;12.14.23.520+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) attached shader -> 9 to shaderProgram -> 7
+{2024$10/02/12/14;::;12.14.23.520+03:00}--[cakilgan;::;CLogger]--[CGShader]--(DEBUG) linking program.
+{2024$10/02/12/14;::;12.14.23.521+03:00}--[cakilgan;::;CLogger]--[MainGame]--(LIFECYCLE)--common/comp_system$--> [MainGame]--:MainGame; (0)
+{2024$10/02/12/14;::;12.14.23.522+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine path: src\main\resources\game
+{2024$10/02/12/14;::;12.14.23.522+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game path: src\main\resources\game
+{2024$10/02/12/14;::;12.14.23.524+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.524+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\logs path: src\main\resources\game
+{2024$10/02/12/14;::;12.14.23.527+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.528+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.529+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\data path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.529+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\background path: src\main\resources\game\assets\background
+{2024$10/02/12/14;::;12.14.23.529+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.530+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\character path: src\main\resources\game\assets\background
+{2024$10/02/12/14;::;12.14.23.530+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\decorations path: src\main\resources\game\assets\background
+{2024$10/02/12/14;::;12.14.23.531+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\background\background_layer_1.png testfile: background_layer_1.png
+{2024$10/02/12/14;::;12.14.23.531+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\background\background_layer_2.png testfile: background_layer_1.png
+{2024$10/02/12/14;::;12.14.23.531+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\background\background_layer_3.png testfile: background_layer_1.png
+{2024$10/02/12/14;::;12.14.23.633+03:00}--[cakilgan;::;CLogger]--[C2DTexture]--(INFO) loaded image successfully from --> src\main\resources\game\assets\background\background_layer_1.png
+{2024$10/02/12/14;::;12.14.23.633+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.633+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.633+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\data path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.634+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\background path: src\main\resources\game\assets\background
+{2024$10/02/12/14;::;12.14.23.634+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.634+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\character path: src\main\resources\game\assets\background
+{2024$10/02/12/14;::;12.14.23.634+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\decorations path: src\main\resources\game\assets\background
+{2024$10/02/12/14;::;12.14.23.635+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\background\background_layer_1.png testfile: background_layer_2.png
+{2024$10/02/12/14;::;12.14.23.635+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\background\background_layer_2.png testfile: background_layer_2.png
+{2024$10/02/12/14;::;12.14.23.635+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\background\background_layer_3.png testfile: background_layer_2.png
+{2024$10/02/12/14;::;12.14.23.638+03:00}--[cakilgan;::;CLogger]--[C2DTexture]--(INFO) loaded image successfully from --> src\main\resources\game\assets\background\background_layer_2.png
+{2024$10/02/12/14;::;12.14.23.638+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.638+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.639+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\data path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.639+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\background path: src\main\resources\game\assets\background
+{2024$10/02/12/14;::;12.14.23.639+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.641+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\character path: src\main\resources\game\assets\background
+{2024$10/02/12/14;::;12.14.23.641+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\decorations path: src\main\resources\game\assets\background
+{2024$10/02/12/14;::;12.14.23.641+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\background\background_layer_1.png testfile: background_layer_3.png
+{2024$10/02/12/14;::;12.14.23.641+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\background\background_layer_2.png testfile: background_layer_3.png
+{2024$10/02/12/14;::;12.14.23.641+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\background\background_layer_3.png testfile: background_layer_3.png
+{2024$10/02/12/14;::;12.14.23.644+03:00}--[cakilgan;::;CLogger]--[C2DTexture]--(INFO) loaded image successfully from --> src\main\resources\game\assets\background\background_layer_3.png
+{2024$10/02/12/14;::;12.14.23.659+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.659+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.659+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\data path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.659+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\background path: src\main\resources\game\assets\character
+{2024$10/02/12/14;::;12.14.23.661+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\character path: src\main\resources\game\assets\character
+{2024$10/02/12/14;::;12.14.23.661+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.662+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\decorations path: src\main\resources\game\assets\character
+{2024$10/02/12/14;::;12.14.23.662+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\character\char_blue.png testfile: char_blue.png
+{2024$10/02/12/14;::;12.14.23.662+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\character\char_blue.png.metadata testfile: char_blue.png
+{2024$10/02/12/14;::;12.14.23.673+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\game\assets\character\char_blue.png.metadata
+{2024$10/02/12/14;::;12.14.23.675+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.676+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.676+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.678+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: spriteWidth:
+{2024$10/02/12/14;::;12.14.23.679+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.679+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 56
+{2024$10/02/12/14;::;12.14.23.679+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.680+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: spriteHeight:
+{2024$10/02/12/14;::;12.14.23.680+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.680+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 56
+{2024$10/02/12/14;::;12.14.23.680+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.681+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: xCount:
+{2024$10/02/12/14;::;12.14.23.681+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.681+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 8
+{2024$10/02/12/14;::;12.14.23.681+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.682+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: yCount:
+{2024$10/02/12/14;::;12.14.23.682+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.683+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 7
+{2024$10/02/12/14;::;12.14.23.683+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.683+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: spriteSpacing:
+{2024$10/02/12/14;::;12.14.23.684+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.684+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 0
+{2024$10/02/12/14;::;12.14.23.684+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.684+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/14;::;12.14.23.685+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) spriteWidth: [ 56 ], spriteHeight: [ 56 ], xCount: [ 8 ], yCount: [ 7 ], spriteSpacing: [ 0 ],
+{2024$10/02/12/14;::;12.14.23.689+03:00}--[cakilgan;::;CLogger]--[C2DTexture]--(INFO) loaded image successfully from --> src\main\resources\game\assets\character\char_blue.png
+{2024$10/02/12/14;::;12.14.23.690+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.690+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.690+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\data path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.690+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\background path: src\main\resources\game\assets\decorations
+{2024$10/02/12/14;::;12.14.23.691+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\character path: src\main\resources\game\assets\decorations
+{2024$10/02/12/14;::;12.14.23.691+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\decorations path: src\main\resources\game\assets\decorations
+{2024$10/02/12/14;::;12.14.23.691+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.691+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\fence_1.png testfile: shop_anim.png
+{2024$10/02/12/14;::;12.14.23.691+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\fence_2.png testfile: shop_anim.png
+{2024$10/02/12/14;::;12.14.23.691+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\grass_1.png testfile: shop_anim.png
+{2024$10/02/12/14;::;12.14.23.693+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\grass_2.png testfile: shop_anim.png
+{2024$10/02/12/14;::;12.14.23.693+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\grass_3.png testfile: shop_anim.png
+{2024$10/02/12/14;::;12.14.23.693+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\lamp.png testfile: shop_anim.png
+{2024$10/02/12/14;::;12.14.23.694+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\rock_1.png testfile: shop_anim.png
+{2024$10/02/12/14;::;12.14.23.694+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\rock_2.png testfile: shop_anim.png
+{2024$10/02/12/14;::;12.14.23.694+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\rock_3.png testfile: shop_anim.png
+{2024$10/02/12/14;::;12.14.23.694+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\shop.png testfile: shop_anim.png
+{2024$10/02/12/14;::;12.14.23.695+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\shop_anim.png testfile: shop_anim.png
+{2024$10/02/12/14;::;12.14.23.695+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\shop_anim.png.metadata testfile: shop_anim.png
+{2024$10/02/12/14;::;12.14.23.696+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\sign.png testfile: shop_anim.png
+{2024$10/02/12/14;::;12.14.23.696+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\game\assets\decorations\shop_anim.png.metadata
+{2024$10/02/12/14;::;12.14.23.699+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.699+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.700+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.701+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: spriteWidth:
+{2024$10/02/12/14;::;12.14.23.702+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.702+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 118
+{2024$10/02/12/14;::;12.14.23.702+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.702+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: spriteHeight:
+{2024$10/02/12/14;::;12.14.23.702+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.703+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 128
+{2024$10/02/12/14;::;12.14.23.704+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.704+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: xCount:
+{2024$10/02/12/14;::;12.14.23.704+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.705+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 6
+{2024$10/02/12/14;::;12.14.23.705+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.705+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: yCount:
+{2024$10/02/12/14;::;12.14.23.706+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.706+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 1
+{2024$10/02/12/14;::;12.14.23.706+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.706+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: spriteSpacing:
+{2024$10/02/12/14;::;12.14.23.706+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.707+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 0
+{2024$10/02/12/14;::;12.14.23.707+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.707+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/14;::;12.14.23.708+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) spriteWidth: [ 118 ], spriteHeight: [ 128 ], xCount: [ 6 ], yCount: [ 1 ], spriteSpacing: [ 0 ],
+{2024$10/02/12/14;::;12.14.23.711+03:00}--[cakilgan;::;CLogger]--[C2DTexture]--(INFO) loaded image successfully from --> src\main\resources\game\assets\decorations\shop_anim.png
+{2024$10/02/12/14;::;12.14.23.712+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.712+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.712+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\data path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.712+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\background path: src\main\resources\game\assets\decorations
+{2024$10/02/12/14;::;12.14.23.714+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\character path: src\main\resources\game\assets\decorations
+{2024$10/02/12/14;::;12.14.23.714+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\decorations path: src\main\resources\game\assets\decorations
+{2024$10/02/12/14;::;12.14.23.714+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.714+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\fence_1.png testfile: grass_1.png
+{2024$10/02/12/14;::;12.14.23.715+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\fence_2.png testfile: grass_1.png
+{2024$10/02/12/14;::;12.14.23.715+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\grass_1.png testfile: grass_1.png
+{2024$10/02/12/14;::;12.14.23.715+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\grass_2.png testfile: grass_1.png
+{2024$10/02/12/14;::;12.14.23.715+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\grass_3.png testfile: grass_1.png
+{2024$10/02/12/14;::;12.14.23.715+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\lamp.png testfile: grass_1.png
+{2024$10/02/12/14;::;12.14.23.716+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\rock_1.png testfile: grass_1.png
+{2024$10/02/12/14;::;12.14.23.716+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\rock_2.png testfile: grass_1.png
+{2024$10/02/12/14;::;12.14.23.716+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\rock_3.png testfile: grass_1.png
+{2024$10/02/12/14;::;12.14.23.716+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\shop.png testfile: grass_1.png
+{2024$10/02/12/14;::;12.14.23.716+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\shop_anim.png testfile: grass_1.png
+{2024$10/02/12/14;::;12.14.23.716+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\shop_anim.png.metadata testfile: grass_1.png
+{2024$10/02/12/14;::;12.14.23.717+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\sign.png testfile: grass_1.png
+{2024$10/02/12/14;::;12.14.23.719+03:00}--[cakilgan;::;CLogger]--[C2DTexture]--(INFO) loaded image successfully from --> src\main\resources\game\assets\decorations\grass_1.png
+{2024$10/02/12/14;::;12.14.23.719+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.720+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.720+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\data path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.720+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\background path: src\main\resources\game\assets\decorations
+{2024$10/02/12/14;::;12.14.23.720+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\character path: src\main\resources\game\assets\decorations
+{2024$10/02/12/14;::;12.14.23.721+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\decorations path: src\main\resources\game\assets\decorations
+{2024$10/02/12/14;::;12.14.23.721+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.721+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\fence_1.png testfile: grass_2.png
+{2024$10/02/12/14;::;12.14.23.721+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\fence_2.png testfile: grass_2.png
+{2024$10/02/12/14;::;12.14.23.722+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\grass_1.png testfile: grass_2.png
+{2024$10/02/12/14;::;12.14.23.722+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\grass_2.png testfile: grass_2.png
+{2024$10/02/12/14;::;12.14.23.722+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\grass_3.png testfile: grass_2.png
+{2024$10/02/12/14;::;12.14.23.722+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\lamp.png testfile: grass_2.png
+{2024$10/02/12/14;::;12.14.23.722+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\rock_1.png testfile: grass_2.png
+{2024$10/02/12/14;::;12.14.23.723+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\rock_2.png testfile: grass_2.png
+{2024$10/02/12/14;::;12.14.23.723+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\rock_3.png testfile: grass_2.png
+{2024$10/02/12/14;::;12.14.23.723+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\shop.png testfile: grass_2.png
+{2024$10/02/12/14;::;12.14.23.723+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\shop_anim.png testfile: grass_2.png
+{2024$10/02/12/14;::;12.14.23.724+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\shop_anim.png.metadata testfile: grass_2.png
+{2024$10/02/12/14;::;12.14.23.724+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\sign.png testfile: grass_2.png
+{2024$10/02/12/14;::;12.14.23.726+03:00}--[cakilgan;::;CLogger]--[C2DTexture]--(INFO) loaded image successfully from --> src\main\resources\game\assets\decorations\grass_2.png
+{2024$10/02/12/14;::;12.14.23.726+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.726+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.728+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\data path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.728+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\background path: src\main\resources\game\assets\decorations
+{2024$10/02/12/14;::;12.14.23.728+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\character path: src\main\resources\game\assets\decorations
+{2024$10/02/12/14;::;12.14.23.728+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets\decorations path: src\main\resources\game\assets\decorations
+{2024$10/02/12/14;::;12.14.23.728+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.729+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\fence_1.png testfile: grass_3.png
+{2024$10/02/12/14;::;12.14.23.729+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\fence_2.png testfile: grass_3.png
+{2024$10/02/12/14;::;12.14.23.729+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\grass_1.png testfile: grass_3.png
+{2024$10/02/12/14;::;12.14.23.730+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\grass_2.png testfile: grass_3.png
+{2024$10/02/12/14;::;12.14.23.730+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\grass_3.png testfile: grass_3.png
+{2024$10/02/12/14;::;12.14.23.730+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\lamp.png testfile: grass_3.png
+{2024$10/02/12/14;::;12.14.23.730+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\rock_1.png testfile: grass_3.png
+{2024$10/02/12/14;::;12.14.23.730+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\rock_2.png testfile: grass_3.png
+{2024$10/02/12/14;::;12.14.23.731+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\rock_3.png testfile: grass_3.png
+{2024$10/02/12/14;::;12.14.23.731+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\shop.png testfile: grass_3.png
+{2024$10/02/12/14;::;12.14.23.731+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\shop_anim.png testfile: grass_3.png
+{2024$10/02/12/14;::;12.14.23.731+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\shop_anim.png.metadata testfile: grass_3.png
+{2024$10/02/12/14;::;12.14.23.732+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\decorations\sign.png testfile: grass_3.png
+{2024$10/02/12/14;::;12.14.23.734+03:00}--[cakilgan;::;CLogger]--[C2DTexture]--(INFO) loaded image successfully from --> src\main\resources\game\assets\decorations\grass_3.png
+{2024$10/02/12/14;::;12.14.23.734+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.735+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.735+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\data path: src\main\resources\game\assets
+{2024$10/02/12/14;::;12.14.23.735+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\oak_woods_tileset.png testfile: oak_woods_tileset.png
+{2024$10/02/12/14;::;12.14.23.736+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\oak_woods_tileset.png.metadata testfile: oak_woods_tileset.png
+{2024$10/02/12/14;::;12.14.23.736+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\assets\readme.TXT testfile: oak_woods_tileset.png
+{2024$10/02/12/14;::;12.14.23.737+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\game\assets\oak_woods_tileset.png.metadata
+{2024$10/02/12/14;::;12.14.23.742+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.742+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.743+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.745+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: spriteWidth:
+{2024$10/02/12/14;::;12.14.23.745+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.745+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 24
+{2024$10/02/12/14;::;12.14.23.745+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.746+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: spriteHeight:
+{2024$10/02/12/14;::;12.14.23.746+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.747+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 24
+{2024$10/02/12/14;::;12.14.23.747+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.747+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: xCount:
+{2024$10/02/12/14;::;12.14.23.747+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.748+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 21
+{2024$10/02/12/14;::;12.14.23.748+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.748+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: yCount:
+{2024$10/02/12/14;::;12.14.23.748+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.748+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 15
+{2024$10/02/12/14;::;12.14.23.749+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.749+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: spriteSpacing:
+{2024$10/02/12/14;::;12.14.23.749+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.749+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 0
+{2024$10/02/12/14;::;12.14.23.750+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.750+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/14;::;12.14.23.750+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) spriteWidth: [ 24 ], spriteHeight: [ 24 ], xCount: [ 21 ], yCount: [ 15 ], spriteSpacing: [ 0 ],
+{2024$10/02/12/14;::;12.14.23.755+03:00}--[cakilgan;::;CLogger]--[C2DTexture]--(INFO) loaded image successfully from --> src\main\resources\game\assets\oak_woods_tileset.png
+{2024$10/02/12/14;::;12.14.23.863+03:00}--[cakilgan;::;CLogger]--[CEngine]--(INFO)--cengine/init#--> finished
+{2024$10/02/12/14;::;12.14.23.864+03:00}--[cakilgan;::;CLogger]--[CEngine]--(INFO)--cengine/loop#--> started
+{2024$10/02/12/14;::;12.14.23.867+03:00}--[cakilgan;::;CLogger]--[CESceneSystem]--(WARNING) scene is changed to -> Scene_1
+{2024$10/02/12/14;::;12.14.23.891+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\assets path: src\main\resources\game\data
+{2024$10/02/12/14;::;12.14.23.891+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\data path: src\main\resources\game\data
+{2024$10/02/12/14;::;12.14.23.891+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.892+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game\data\map path: src\main\resources\game\data\map
+{2024$10/02/12/14;::;12.14.23.892+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/14;::;12.14.23.892+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) file: src\main\resources\game\data\map\map.c2dmap testfile: map.c2dmap
+{2024$10/02/12/14;::;12.14.23.893+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\game\data\map\map.c2dmap
+{2024$10/02/12/14;::;12.14.23.894+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.895+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.895+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.901+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 0,0,scene1_map1
+{2024$10/02/12/14;::;12.14.23.901+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/14;::;12.14.23.901+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) 0,0,scene1_map1
+{2024$10/02/12/14;::;12.14.23.902+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 2400,4800,96,96
+{2024$10/02/12/14;::;12.14.23.902+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/14;::;12.14.23.902+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) 2400,4800,96,96
+{2024$10/02/12/14;::;12.14.23.903+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: tileset
+{2024$10/02/12/14;::;12.14.23.903+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: src/main/resources/game/assets/oak_woods_tileset.png
+{2024$10/02/12/14;::;12.14.23.903+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 504
+{2024$10/02/12/14;::;12.14.23.903+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 360,
+{2024$10/02/12/14;::;12.14.23.904+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/14;::;12.14.23.904+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) tileset src/main/resources/game/assets/oak_woods_tileset.png 504 360,
+{2024$10/02/12/14;::;12.14.23.905+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\game\assets\oak_woods_tileset.png.metadata
+{2024$10/02/12/14;::;12.14.23.906+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/14;::;12.14.23.906+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/14;::;12.14.23.907+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/14;::;12.14.23.909+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: spriteWidth:
+{2024$10/02/12/14;::;12.14.23.909+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.909+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 24
+{2024$10/02/12/14;::;12.14.23.909+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.910+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: spriteHeight:
+{2024$10/02/12/14;::;12.14.23.910+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.910+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 24
+{2024$10/02/12/14;::;12.14.23.910+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.911+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: xCount:
+{2024$10/02/12/14;::;12.14.23.911+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.911+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 21
+{2024$10/02/12/14;::;12.14.23.911+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.911+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: yCount:
+{2024$10/02/12/14;::;12.14.23.912+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.912+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 15
+{2024$10/02/12/14;::;12.14.23.912+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.912+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: spriteSpacing:
+{2024$10/02/12/14;::;12.14.23.912+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/14;::;12.14.23.913+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 0
+{2024$10/02/12/14;::;12.14.23.913+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/14;::;12.14.23.913+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/14;::;12.14.23.913+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) spriteWidth: [ 24 ], spriteHeight: [ 24 ], xCount: [ 21 ], yCount: [ 15 ], spriteSpacing: [ 0 ],
+{2024$10/02/12/14;::;12.14.23.917+03:00}--[cakilgan;::;CLogger]--[C2DTexture]--(INFO) loaded image successfully from --> src/main/resources/game/assets/oak_woods_tileset.png
+{2024$10/02/12/14;::;12.14.23.920+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/14;::;12.14.23.920+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) 
+{2024$10/02/12/14;::;12.14.23.921+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/14;::;12.14.23.921+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) 
+{2024$10/02/12/14;::;12.14.23.921+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: all
+{2024$10/02/12/14;::;12.14.23.921+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 1250
+{2024$10/02/12/14;::;12.14.23.921+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 4
+{2024$10/02/12/14;::;12.14.23.922+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/14;::;12.14.23.922+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) all 1250 4
+{2024$10/02/12/14;::;12.14.23.924+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 0
+{2024$10/02/12/14;::;12.14.23.924+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: tileset[0],
+{2024$10/02/12/14;::;12.14.23.925+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 1
+{2024$10/02/12/14;::;12.14.23.925+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: tileset[1],
+{2024$10/02/12/14;::;12.14.23.925+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 3
+{2024$10/02/12/14;::;12.14.23.925+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: tileset[3],
+{2024$10/02/12/14;::;12.14.23.926+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 4
+{2024$10/02/12/14;::;12.14.23.926+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: tileset[4],
+{2024$10/02/12/14;::;12.14.23.926+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 5
+{2024$10/02/12/14;::;12.14.23.926+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: tileset[0]
+{2024$10/02/12/14;::;12.14.23.926+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: static,
+{2024$10/02/12/14;::;12.14.23.926+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/14;::;12.14.23.926+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) 0 tileset[0], 1 tileset[1], 3 tileset[3], 4 tileset[4], 5 tileset[0] static,
+{2024$10/02/12/14;::;12.14.23.927+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.928+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.928+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.928+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.929+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.929+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.929+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.929+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.929+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.931+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.931+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.931+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.932+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.932+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.932+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.932+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.933+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.933+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.933+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.933+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.933+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.934+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.934+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444444444444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.934+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 44444444444455544444444444444444444444444444444444
+{2024$10/02/12/14;::;12.14.23.934+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: 01111111111111111111111111111111111111111111111113
+{2024$10/02/12/14;::;12.14.23.935+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/14;::;12.14.23.935+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444444444444444444444444444444444444444444 44444444444455544444444444444444444444444444444444 01111111111111111111111111111111111111111111111113
+{2024$10/02/12/14;::;12.14.23.983+03:00}--[cakilgan;::;CLogger]--[C2DTexture]--(WARNING) textures is already created!
+{2024$10/02/12/17;::;12.17.09.548+03:00}--[cakilgan;::;CLogger]--[CEngine]--(INFO)--cengine/loop#--> finished
+{2024$10/02/12/17;::;12.17.09.549+03:00}--[cakilgan;::;CLogger]--[CEngine]--(INFO)--cengine/dispose#--> started
+{2024$10/02/12/17;::;12.17.09.643+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine path: src\main\resources\logs
+{2024$10/02/12/17;::;12.17.09.643+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game path: src\main\resources\logs
+{2024$10/02/12/17;::;12.17.09.643+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\logs path: src\main\resources\logs
+{2024$10/02/12/17;::;12.17.09.643+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/17;::;12.17.09.644+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine path: src\main\resources\logs
+{2024$10/02/12/17;::;12.17.09.644+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game path: src\main\resources\logs
+{2024$10/02/12/17;::;12.17.09.644+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\logs path: src\main\resources\logs
+{2024$10/02/12/17;::;12.17.09.645+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/17;::;12.17.09.648+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\logs\latest.clog.metadata
+{2024$10/02/12/17;::;12.17.09.653+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/17;::;12.17.09.654+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/17;::;12.17.09.655+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/17;::;12.17.09.660+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: creationDate:
+{2024$10/02/12/17;::;12.17.09.661+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: [
+{2024$10/02/12/17;::;12.17.09.661+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: 2024_09_30_11_41_54
+{2024$10/02/12/17;::;12.17.09.661+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on try: ],
+{2024$10/02/12/17;::;12.17.09.662+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) val on catch: }
+{2024$10/02/12/17;::;12.17.09.662+03:00}--[cakilgan;::;CLogger]--[CakilganScriptEngine]--(DEBUG) creationDate: [ 2024_09_30_11_41_54 ],
+{2024$10/02/12/17;::;12.17.09.666+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\logs\latest.clog
+{2024$10/02/12/17;::;12.17.09.668+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) setup is false! doing a new setup.
+{2024$10/02/12/17;::;12.17.09.668+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) exclusive setup
+{2024$10/02/12/17;::;12.17.09.671+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) resetting fileReader
+{2024$10/02/12/17;::;12.17.09.693+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\engine path: src\main\resources\logs
+{2024$10/02/12/17;::;12.17.09.693+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\game path: src\main\resources\logs
+{2024$10/02/12/17;::;12.17.09.694+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) dir: src\main\resources\logs path: src\main\resources\logs
+{2024$10/02/12/17;::;12.17.09.694+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) found dir
+{2024$10/02/12/17;::;12.17.09.698+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\logs\ 2024_09_30_11_41_54.clog
+{2024$10/02/12/17;::;12.17.09.709+03:00}--[cakilgan;::;CLogger]--[Resource]--(DEBUG) saving metadata: [meta-data] creationDate - 2024_10_02_12_17_09
+{2024$10/02/12/17;::;12.17.09.709+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\logs\latest.clog.metadata
+{2024$10/02/12/17;::;12.17.09.718+03:00}--[cakilgan;::;CLogger]--[FileHelper]--(DEBUG) creating helper for -> src\main\resources\logs\latest.clog

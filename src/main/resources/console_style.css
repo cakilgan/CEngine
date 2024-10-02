@@ -1,0 +1,15 @@
+.styled-text-area {
+    -fx-background-color: black;  /* Arka plan rengi */
+    -fx-font-family: "JetBrains Mono", monospace; /* Monospace font */
+    -fx-font-size: 22px;          /* Yazı boyutu */
+}
+
+.text {
+    -fx-fill: white;  /* Yazı rengi */
+}
+
+.caret {
+    -fx-stroke: white;
+    -fx-scale-x: 3;
+}
+

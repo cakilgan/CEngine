@@ -1,0 +1,7 @@
+
+Çakılgan Core;category.core:Çakılgan Core[0]
+core class of all Çakılgan projects.
+Çakılgan Core;category.managment:Resource Manager[1]
+creates files dirs and manages them.
+Çakılgan Core;category.managment:File Helper[2]
+IO Handler ,can read and write patterned texts.
