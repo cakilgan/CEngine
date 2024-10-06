@@ -12,6 +12,7 @@ import io.github.cakilgan.engine.window.scene.CEScene;
 import io.github.cakilgan.physics.CPBody;
 import org.joml.Vector2f;
 import org.joml.Vector2i;
+import org.joml.Vector3f;
 
 import java.util.HashMap;
 import java.util.function.BiConsumer;
@@ -81,8 +82,8 @@ public class C2DMap {
     public void setDebugDrawAll(){
         int i = 0;
         for (C2DMapObject mapObject : mapObjects) {
+            mapObject.getObject().addComponent("debug",new C2DDebugDraw().setColorcode(new Vector3f(1,0,1)));
             i++;
-        mapObject.getObject().addComponent("debugDraw",new C2DDebugDraw());
         }
         debugDrawAll = true;
     }
@@ -90,7 +91,7 @@ public class C2DMap {
         int i = 0;
         for (C2DMapObject mapObject : mapObjects) {
             i++;
-            mapObject.getObject().removeComponent("debugDraw");
+            mapObject.getObject().removeComponent("debug");
         }
         debugDrawAll = false;
     }
@@ -115,7 +116,7 @@ public class C2DMap {
     }
     HashMap<Integer,CEObjectID> objectIDHashMap = new HashMap<>();
     private String decompile(Vector2i pos){
-        return mapName+":"+pos.y+"-"+pos.y;
+        return mapName+":"+pos.y+"-"+pos.x;
     }
     public void addBody(int index,String compCode,CPBody<?> body){
         mapObjects[index].getObject().addComponent(compCode,body);

@@ -7,9 +7,7 @@ import io.github.cakilgan.cresourcemanager.comp.ResourceID;
 import io.github.cakilgan.cresourcemanager.resources.*;
 import io.github.cakilgan.cresourcemanager.resources.file.SchemaResource;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class CResourceManager {
     HashMap<String,Resource<?,?,?>> RESOURCES;

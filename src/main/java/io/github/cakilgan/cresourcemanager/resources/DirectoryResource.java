@@ -8,7 +8,9 @@ import io.github.cakilgan.cresourcemanager.resources.file.SchemaResource;
 import io.github.cakilgan.cresourcemanager.resources.types.file.DirectoryResourceType;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.FileAlreadyExistsException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
@@ -156,6 +158,9 @@ public class DirectoryResource extends Resource<String, File, FileHelper> {
                 }
             }
         });
+        if (file[0]==null){
+            LOGGER.excFalse(new FileNotFoundException("cannot found file for "+path));
+        }
         return file[0];
     }
     public DirectoryResource getDir(String path){

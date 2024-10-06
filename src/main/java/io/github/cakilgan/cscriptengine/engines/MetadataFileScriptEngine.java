@@ -8,9 +8,7 @@ import io.github.cakilgan.cresourcemanager.data.StringMetaData;
 import io.github.cakilgan.cresourcemanager.resources.FileResource;
 import io.github.cakilgan.cscriptengine.CakilganScriptEngine;
 import io.github.cakilgan.cscriptengine.comp.Keyword;
-import io.github.cakilgan.engine.CEngine;
 
-import java.io.File;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

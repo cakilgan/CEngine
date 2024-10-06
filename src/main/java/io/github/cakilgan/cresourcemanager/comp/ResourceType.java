@@ -3,10 +3,10 @@ package io.github.cakilgan.cresourcemanager.comp;
 public class ResourceType<T,K,R> implements IResourceType {
     BooleanConsumer<R> create;
     BooleanConsumer<R> write;
-    BooleanConsumer<R> read;
+    BooleanConsumer<R> update;
     BooleanConsumer<R> delete;
     BooleanConsumer<R> exit;
-    BooleanConsumer<R> update;
+    BooleanConsumer<R> read;
 
     public BooleanConsumer<R> getCreate() {
         return create;
@@ -33,8 +33,8 @@ public class ResourceType<T,K,R> implements IResourceType {
     public void setWrite(BooleanConsumer<R> write) {
         this.write = write;
     }
-    public void setRead(BooleanConsumer<R> read) {
-        this.read = read;
+    public void setUpdate(BooleanConsumer<R> update) {
+        this.update = update;
     }
     public void setDelete(BooleanConsumer<R> delete) {
         this.delete = delete;
@@ -42,8 +42,8 @@ public class ResourceType<T,K,R> implements IResourceType {
     public void setExit(BooleanConsumer<R> exit) {
         this.exit = exit;
     }
-    public void setUpdate(BooleanConsumer<R> update) {
-        this.update = update;
+    public void setRead(BooleanConsumer<R> read) {
+        this.read = read;
     }
 
     String typeName;

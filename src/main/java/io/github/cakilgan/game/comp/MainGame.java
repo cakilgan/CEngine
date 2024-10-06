@@ -16,6 +16,7 @@ import io.github.cakilgan.engine.map.C2DMap;
 import io.github.cakilgan.engine.system.CEComponent;
 import io.github.cakilgan.engine.system.HasLogger;
 import io.github.cakilgan.game.scene.MainGameScene1;
+import io.github.cakilgan.game.scene.MainGameScene2;
 import org.joml.Vector2f;
 import org.joml.Vector2i;
 

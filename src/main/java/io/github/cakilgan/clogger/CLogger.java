@@ -1,19 +1,19 @@
 package io.github.cakilgan.clogger;
 
+import io.github.cakilgan.clogger.format.CLoggerFormatter;
 import io.github.cakilgan.clogger.comp.CLoggerPrintStream;
+import io.github.cakilgan.clogger.format.ElementWithType;
 import io.github.cakilgan.clogger.context.CLoggerContext;
 import io.github.cakilgan.clogger.format.CLColor;
-import io.github.cakilgan.clogger.format.CLoggerFormatter;
-import io.github.cakilgan.clogger.format.ElementWithType;
-import io.github.cakilgan.clogger.format.Level;
 import io.github.cakilgan.clogger.intf.ICLogger;
+import io.github.cakilgan.clogger.format.Level;
 import io.github.cakilgan.clogger.util.Text;
 
-import java.io.PrintStream;
-import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.function.Supplier;
+import java.io.PrintStream;
+import java.util.*;
 
 public class CLogger implements ICLogger {
     public static String NAMESPACE = "[cakilgan;::;CLogger]";
@@ -28,7 +28,6 @@ public class CLogger implements ICLogger {
     private static List<String> GLOBAL_LOG_HISTORY;
     private static Level GLOBAL_LOG_LEVEL;
     private static boolean globalDebugMode = true;
-
 
     private final Class<?> aClass;
     private List<String> LOG_HISTORY;

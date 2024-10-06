@@ -35,7 +35,7 @@ import static org.lwjgl.opengl.GL30.glBindVertexArray;
 import static org.lwjgl.opengl.GL30.glGenVertexArrays;
 
 public class C2DDebugRenderer implements CESceneComponent {
-    private  int MAX_LINES = 1000000;
+    private  int MAX_LINES = 100000;
 
     boolean shouldDebugRenderJPhysics = false;
 
@@ -110,7 +110,7 @@ public class C2DDebugRenderer implements CESceneComponent {
                     }
                 });
                 if (tr[0]){
-                    addCircle(object.getTransform().getPos(),1f,new Vector3f(1,0,0));
+                    //addCircle(object.getTransform().getPos(),1f,new Vector3f(1,0,0));
                     addBox2D(object.getTransform().getPos(),object.getTransform().getScale(),object.getTransform().getRotation(),colorcode[0]);
                 }
             }
@@ -130,12 +130,7 @@ public class C2DDebugRenderer implements CESceneComponent {
             start();
             started = true;
         }
-        for (int i=0; i < lines.size(); i++) {
-            if (lines.get(i).getLifetime() < 0) {
-                lines.remove(i);
-                i--;
-            }
-        }
+
     }
 
     public Vector2f to(Vec2 from){
@@ -151,7 +146,9 @@ public class C2DDebugRenderer implements CESceneComponent {
     }
 
     public  void draw() {
-        if (lines.size() <= 0) return;
+        if (lines.size() <= 0){
+            return;
+        }
         vertexArray = new float[MAX_LINES*7*2];
         int index = 0;
         for (C2DLine line : lines) {

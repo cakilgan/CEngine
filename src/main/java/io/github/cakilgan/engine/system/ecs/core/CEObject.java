@@ -1,12 +1,14 @@
 package io.github.cakilgan.engine.system.ecs.core;
 
 import io.github.cakilgan.cgraphics.c2d.render.sprite.C2DSprite;
+import io.github.cakilgan.engine.CEngine;
 import io.github.cakilgan.engine.system.ecs.CEObjectSystem;
 import io.github.cakilgan.engine.system.ecs.comp.CEOComponentSystem;
 import io.github.cakilgan.engine.system.ecs.comp.CEOTransform;
 import io.github.cakilgan.engine.system.ecs.comp.core.CEOComponent;
 import io.github.cakilgan.engine.system.ecs.util.CEObjectID;
 import io.github.cakilgan.physics.CPBody;
+import org.joml.Vector2f;
 
 import java.util.HashMap;
 import java.util.function.BiConsumer;
