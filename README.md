@@ -1,6 +1,6 @@
-# CEngine Game Project
+# CEngine
 
-This project contains a simple 2D game scene developed using the CEngine game engine. CEngine is a custom game engine built with LWJGL (Lightweight Java Game Library) and OpenGL, providing optimized graphics and resource management.
+This project contains a simple 2D game scene developed using the CEngine. CEngine is a custom game engine built with LWJGL (Lightweight Java Game Library) and OpenGL, providing optimized graphics and resource management.
 
   
 ## Features
