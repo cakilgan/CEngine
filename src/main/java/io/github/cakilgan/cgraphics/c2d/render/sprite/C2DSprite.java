@@ -18,6 +18,14 @@ public class C2DSprite extends CEOComponent implements IBindUnbind {
     static CLogger LOGGER = CLoggerSystem.logger(C2DSprite.class);
     boolean flag;
 
+    String direction = "right";
+    public void setDirection(String direction) {
+        this.direction = direction;
+    }
+    public String getDirection() {
+        return direction;
+    }
+
     public void setFlag(boolean flag) {
         this.flag = flag;
     }
@@ -176,11 +184,14 @@ public class C2DSprite extends CEOComponent implements IBindUnbind {
         super.update(dt);
     }
     public C2DSprite copyWithoutTransform(){
-        return new C2DSprite(getTexture(),mesh);
+        C2DSprite sprite = new C2DSprite(getTexture(),mesh);
+        sprite.setDirection(direction);
+        return sprite;
     }
 
     public void set(C2DSprite sprite) {
         this.texture = sprite.texture;
         this.mesh = sprite.mesh;
+        setDirection(sprite.getDirection());
     }
 }

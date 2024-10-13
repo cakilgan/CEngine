@@ -40,10 +40,20 @@ public class C2DAnimation extends CEOComponent {
     public void setAnim(String code){
         indexes = anims.get(code);
     }
-    public void play(String code,float dt){
+    boolean reset;
+
+    public void setReset(boolean reset) {
+        this.reset = reset;
+    }
+
+    public void play(String code, float dt){
         setPlaycode(code);
         indexes = anims.get(playcode);
         spriteCount = indexes.length;
+        if (reset){
+            dt = 0f;
+            reset =false;
+        }
         last_ms-= dt;
         if (last_ms<=0){
             last_ms = ms;

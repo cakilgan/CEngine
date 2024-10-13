@@ -46,7 +46,7 @@ public class CESceneSystem extends CakilganComponent implements CEComponent,Upda
     }
     @Override
     public void dispose() {
-
+        scene.dispose();
     }
     @Override
     public void update(double dt) {

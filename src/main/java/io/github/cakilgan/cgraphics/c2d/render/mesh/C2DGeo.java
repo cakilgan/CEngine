@@ -31,7 +31,12 @@ public class C2DGeo extends C2DMesh{
     }
 
     public Vector2f[] getTexCoords() {
-        return texCoords;
+        return new Vector2f[]{
+                new Vector2f(texCoords[0]),
+                new Vector2f(texCoords[1]),
+                new Vector2f(texCoords[2]),
+                new Vector2f(texCoords[3])
+        };
     }
 
     public void setTexCoords(Vector2f[] texCoords) {

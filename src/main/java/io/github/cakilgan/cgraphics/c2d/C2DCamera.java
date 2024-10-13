@@ -127,19 +127,26 @@ public class C2DCamera extends ICamera implements CESceneComponent {
 
     }
 
+    boolean canMoveWithWASD = true;
+    public void setCanMoveWithWASD(boolean canMoveWithWASD) {
+        this.canMoveWithWASD = canMoveWithWASD;
+    }
+
     @Override
     public void refresh() {
-        if (CEngine.KEYBOARD.isKeyHolding(GLFW.GLFW_KEY_W)) {
-            position.y += (float) (1000f * CEngine.TIME.getDt());
-        }
-        if (CEngine.KEYBOARD.isKeyHolding(GLFW.GLFW_KEY_S)) {
-            position.y -= (float) (1000f * CEngine.TIME.getDt());
-        }
-        if (CEngine.KEYBOARD.isKeyHolding(GLFW.GLFW_KEY_A)) {
-            position.x += (float) (1000f * CEngine.TIME.getDt());
-        }
-        if (CEngine.KEYBOARD.isKeyHolding(GLFW.GLFW_KEY_D)) {
-            position.x -= (float) (1000f * CEngine.TIME.getDt());
+        if (canMoveWithWASD){
+            if (CEngine.KEYBOARD.isKeyHolding(GLFW.GLFW_KEY_W)) {
+                position.y += (float) (1000f * CEngine.TIME.getDt());
+            }
+            if (CEngine.KEYBOARD.isKeyHolding(GLFW.GLFW_KEY_S)) {
+                position.y -= (float) (1000f * CEngine.TIME.getDt());
+            }
+            if (CEngine.KEYBOARD.isKeyHolding(GLFW.GLFW_KEY_A)) {
+                position.x += (float) (1000f * CEngine.TIME.getDt());
+            }
+            if (CEngine.KEYBOARD.isKeyHolding(GLFW.GLFW_KEY_D)) {
+                position.x -= (float) (1000f * CEngine.TIME.getDt());
+            }
         }
         scene.objectSystem().getObjects().forEach(new BiConsumer<CEObjectID, CEObject>() {
             @Override

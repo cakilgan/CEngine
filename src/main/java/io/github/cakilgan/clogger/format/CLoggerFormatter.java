@@ -2,6 +2,8 @@ package io.github.cakilgan.clogger.format;
 
 import io.github.cakilgan.clogger.CLogger;
 import io.github.cakilgan.clogger.util.Text;
+import io.github.cakilgan.cscriptengine.CakilganScriptEngine;
+import io.github.cakilgan.cscriptengine.comp.Keyword;
 
 import java.util.*;
 
@@ -56,6 +58,7 @@ public class CLoggerFormatter {
 
     static {
         DEFAULT_FORMATTER.addElement("context",new ElementWithType<>("ctx:","empty"){
+
             @Override
             public String format() {
                 if (getType().isEmpty()){

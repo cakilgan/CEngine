@@ -100,18 +100,20 @@ public class C2DDebugRenderer implements CESceneComponent {
             public void accept(CEObjectID ceObjectID, CEObject object) {
                 final boolean[] tr = {false,false};
                 final Vector3f[] colorcode = new Vector3f[1];
+                final float[] zpos = new float[]{0f};
                 object.getComponents().forEach(new BiConsumer<String, CEOComponent>() {
                     @Override
                     public void accept(String s, CEOComponent ceoComponent) {
                         if (ceoComponent instanceof C2DDebugDraw){
                             tr[0] =true;
                             colorcode[0] = ((C2DDebugDraw) ceoComponent).getColor();
+                            zpos[0] = ((C2DDebugDraw) ceoComponent).getZPos();
                         }
                     }
                 });
                 if (tr[0]){
                     //addCircle(object.getTransform().getPos(),1f,new Vector3f(1,0,0));
-                    addBox2D(object.getTransform().getPos(),object.getTransform().getScale(),object.getTransform().getRotation(),colorcode[0]);
+                    addBox2D(object.getTransform().getPos(),object.getTransform().getScale(),object.getTransform().getRotation(),colorcode[0],zpos[0]);
                 }
             }
         });
@@ -155,11 +157,12 @@ public class C2DDebugRenderer implements CESceneComponent {
             for (int i=0; i < 2; i++) {
                 Vector2f position = i == 0 ? line.getFrom() : line.getTo();
                 Vector3f color = line.getColor();
+                float zpos = line.getzPos();
 
                 // Load position
                 vertexArray[index] = position.x;//0 7
                 vertexArray[index + 1] = position.y;
-                vertexArray[index + 2] = -5.0f;
+                vertexArray[index + 2] = zpos;
 
                 // Load the color
                 vertexArray[index + 3] = color.x;
@@ -229,7 +232,41 @@ public class C2DDebugRenderer implements CESceneComponent {
     public  int[] addBox2D(Vector2f center, Vector2f dimensions, float rotation, Vector3f color) {
        return addBox2D(center, dimensions, rotation, color, 1);
     }
+    public  int[] addBox2D(Vector2f center, Vector2f dimensions, float rotation, Vector3f color,float zPos) {
+        return addBox2D(center, dimensions, rotation, color, 1,zPos);
+    }
+    public int[] addBox2D(Vector2f center, Vector2f dimensions, float rotation,
+                          Vector3f color, int lifetime,float zPos) {
+        // Köşe noktalarını hesapla
+        Vector2f min = new Vector2f(-dimensions.x / 2, -dimensions.y / 2);
+        Vector2f max = new Vector2f(dimensions.x / 2, dimensions.y / 2);
 
+        // Rotasyon matrisi
+        Matrix3x2f rotationMatrix = new Matrix3x2f().rotate(toRadians(rotation));
+
+        // Köşe noktaları
+        Vector2f[] vertices = {
+                new Vector2f(min.x, min.y),
+                new Vector2f(min.x, max.y),
+                new Vector2f(max.x, max.y),
+                new Vector2f(max.x, min.y)
+        };
+
+        // Köşe noktalarını döndür ve merkeze taşı
+        for (int i = 0; i < vertices.length; i++) {
+            Vector3f vertex3D = new Vector3f(vertices[i].x, vertices[i].y, 0); // 2D'yi 3D'ye dönüştür
+            rotationMatrix.transform(vertex3D); // Rotasyonu uygula
+            vertices[i].set(vertex3D.x, vertex3D.y); // 2D noktasını güncelle
+            vertices[i].add(center); // Merkeze taş
+        }
+
+        return new int[] {
+                addLine2D(vertices[0], vertices[1], color, lifetime),
+                addLine2D(vertices[1], vertices[2], color, lifetime),
+                addLine2D(vertices[2], vertices[3], color, lifetime),
+                addLine2D(vertices[3], vertices[0], color, lifetime)
+        };
+    }
     public int[] addBox2D(Vector2f center, Vector2f dimensions, float rotation,
                           Vector3f color, int lifetime) {
         // Köşe noktalarını hesapla

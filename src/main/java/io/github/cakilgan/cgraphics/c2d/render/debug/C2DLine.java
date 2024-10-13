@@ -8,6 +8,14 @@ public class C2DLine {
     private Vector2f to;
     private Vector3f color;
     private int lifetime;
+    private float zPos;
+
+    public void setzPos(float zPos) {
+        this.zPos = zPos;
+    }
+    public float getzPos() {
+        return zPos;
+    }
 
     public C2DLine(Vector2f from, Vector2f to) {
         this.from = from;
