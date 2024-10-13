@@ -101,6 +101,14 @@ public class MainGame implements CEComponent, HasLogger {
 }
 ```
 5. see the example in the io.github.cakilgan.game package.
+## Games
+ ### SnakeGame
+ ![img1.png](img1.png)
+ ![img2.png](img2.png)
+ - Use arrow keys to play.
+ - Press enter the try again when you lost.
+ - Shows the fps,move-ms,score
+ - It stores high score in highscore.dat and loads from there when game is restarted.
 ## To-Do
 
 - Add more game examples.
