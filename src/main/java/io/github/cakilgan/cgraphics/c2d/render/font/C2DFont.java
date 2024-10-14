@@ -26,6 +26,14 @@ public class C2DFont {
             6,
             0
     ," !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~");
+    public static C2DFont DEFAULT_FONT_2 = new C2DFont(
+            new C2DTexture(CEngine.RESOURCE_MANAGER.textures().getFile("def_font.png"),new Vector2i(126,49)),
+            7,
+            7,
+            18,
+            7,
+            0
+            ," !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~");
     C2DFontRenderer renderer;
     public void setRenderer(C2DFontRenderer renderer) {
         this.renderer = renderer;
@@ -36,10 +44,12 @@ public class C2DFont {
 
 
 
+    String forparse;
     C2DSpriteSheet spriteSheet;
     public C2DFont(C2DTexture texture,int charHeight,int charWidth,int xCount,int yCount,int spacing,String parseString){
         texture.create();
         spriteSheet = new C2DSpriteSheet(texture,charWidth,charHeight,xCount,yCount,spacing);
+        this.forparse = parseString;
         parse(parseString);
         set(-30,0);
     }
@@ -102,6 +112,9 @@ public class C2DFont {
     HashMap<Character,Integer> map = new HashMap<>();
     public C2DSprite getForChar(char c){
         return _ch(map.get(c));
+    }
+    public C2DFont copy(){
+        return new C2DFont(this.getSpriteSheet().getTexture(),spriteSheet.spriteHeight,spriteSheet.spriteWidth, spriteSheet.xCount, spriteSheet.yCount, spriteSheet.spacing, forparse);
     }
     public C2DSpriteSheet getSpriteSheet() {
         return spriteSheet;

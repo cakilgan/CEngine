@@ -20,7 +20,7 @@ public class C2DSpriteSheet {
         this.sprites = sprites;
     }
 
-    int spriteWidth,spriteHeight,xCount,yCount,spacing;
+    public int spriteWidth,spriteHeight,xCount,yCount,spacing;
     public C2DSpriteSheet(C2DTexture texture, int spriteWidth, int spriteHeight, int xCount, int yCount, int spriteSpacing) {
         if (texture==null){
             return;
@@ -112,6 +112,12 @@ public class C2DSpriteSheet {
         return spriteSheet;
     }
 
+    public void reZPos(float zpos){
+        for (C2DSprite sprite : getSprites()) {
+            sprite.setZPos(zpos);
+            sprite.setDontSyncZpos(true);
+        }
+    }
     public List<C2DSprite> getSprites() {
         return sprites;
     }

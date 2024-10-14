@@ -10,13 +10,10 @@ import io.github.cakilgan.cresourcemanager.resources.SpriteResource;
 import io.github.cakilgan.cresourcemanager.resources.SpriteSheetResource;
 import io.github.cakilgan.cresourcemanager.resources.TextureResource;
 import io.github.cakilgan.cresourcemanager.resources.file.TextureFileResource;
-import io.github.cakilgan.cscriptengine.engines.MapFileScriptEngine;
 import io.github.cakilgan.engine.CEngine;
-import io.github.cakilgan.engine.map.C2DMap;
 import io.github.cakilgan.engine.system.CEComponent;
 import io.github.cakilgan.engine.system.HasLogger;
 import io.github.cakilgan.game.scene.MainGameScene1;
-import io.github.cakilgan.game.scene.MainGameScene2;
 import org.joml.Vector2f;
 import org.joml.Vector2i;
 
@@ -65,6 +62,8 @@ public class MainGame implements CEComponent, HasLogger {
         //tilesets
         CEngine.RESOURCE_MANAGER.addResource("tilesets_main",new SpriteSheetResource("tilesets_main",C2DSpriteSheet.readFromTextureMetadata(new TextureFileResource(gameResources.getDir("assets").getFile("oak_woods_tileset.png"),new Vector2i(504,360)))));
 
+        //snakegame
+        CEngine.RESOURCE_MANAGER.addResource("snakeAtlas",new SpriteSheetResource("snakeAtlas",C2DSpriteSheet.readFromTextureMetadata(new TextureFileResource(gameResources.getDir("assets").getDir("snakegame").getFile("atlas.png"),new Vector2i(170,170)))));
         //set scene
         CEngine.SCENE.setScene(new MainGameScene1());
     }

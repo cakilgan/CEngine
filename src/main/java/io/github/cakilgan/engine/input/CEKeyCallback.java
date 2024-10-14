@@ -21,6 +21,7 @@ public class CEKeyCallback implements CEComponent {
     }
     @Override
     public void init() {
+        glfwSetInputMode(CEngine.WINDOW.getWindow(), GLFW_LOCK_KEY_MODS, GLFW_TRUE);
        glfwSetKeyCallback(windowInstance.getWindow(),CEKeyCallback::callback);
     }
     @Override
@@ -31,7 +32,20 @@ public class CEKeyCallback implements CEComponent {
     public void dispose() {
 
     }
+    static boolean capsLockOn;
+    public boolean isCapsLockOn() {
+        return capsLockOn;
+    }
+    private static void setCapsLockOn(boolean capsLockOn) {
+        CEKeyCallback.capsLockOn = capsLockOn;
+    }
+
     private static void callback(long window, int key, int scancode, int action, int mods){
+        if ((mods & GLFW_MOD_CAPS_LOCK) != 0) {
+            setCapsLockOn(true);
+        }else{
+            setCapsLockOn(false);
+        }
         if (action==GLFW_PRESS){
             if (key<0||key>500){
                 return;

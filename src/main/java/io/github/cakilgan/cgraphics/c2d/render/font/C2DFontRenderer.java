@@ -6,6 +6,7 @@ import io.github.cakilgan.cgraphics.c2d.render.sprite.C2DSprite;
 import io.github.cakilgan.engine.CEngine;
 import io.github.cakilgan.engine.system.ecs.comp.core.CEOComponent;
 import org.joml.Vector2f;
+import org.joml.Vector3f;
 
 public class C2DFontRenderer extends CEOComponent {
 
@@ -27,11 +28,25 @@ public class C2DFontRenderer extends CEOComponent {
         this.component = new C2DFontComponent();
     }
 
+    float zpos = 0f;
+
+    public void setZpos(float zpos) {
+        this.zpos = zpos;
+    }
+
+    Vector3f colorize = new Vector3f(1,1,1);
+    public void setColorize(Vector3f colorize) {
+        this.colorize = colorize;
+    }
+
     int initLength;
     @Override
     public void init() {
         C2DSprite[] sprites = font.firstInit();
         for (int i = 0; i < sprites.length; i++) {
+            sprites[i].setZPos(zpos);
+            sprites[i].setDontSyncZpos(true);
+            sprites[i].getColor().set(colorize.x,colorize.y,colorize.z);
             getParent().addComponent("font["+i+"]",sprites[i]);
         }
         initLength = sprites.length;
@@ -49,6 +64,7 @@ public class C2DFontRenderer extends CEOComponent {
                 }
                 C2DSprite sprite = (C2DSprite) getParent().getComponent("font["+i+"]");
                 if (sprite!=null){
+                    sprite.getColor().set(colorize.x,colorize.y,colorize.z);
                 ((C2DGeo)sprite.mesh()).setTexCoords(((C2DGeo)spriteCopy.mesh()).getTexCoords());
                 }
             }
@@ -56,6 +72,7 @@ public class C2DFontRenderer extends CEOComponent {
                 for (int i = sprites.length; i < initLength; i++) {
                     C2DSprite spriteCopy = font.spriteSheet.getSprites().get(0);
                     C2DSprite sprite = (C2DSprite) getParent().getComponent("font["+i+"]");
+                    sprite.getColor().set(colorize.x,colorize.y,colorize.z);
                     ((C2DGeo)sprite.mesh()).setTexCoords(((C2DGeo)spriteCopy.mesh()).getTexCoords());
                 }
             }

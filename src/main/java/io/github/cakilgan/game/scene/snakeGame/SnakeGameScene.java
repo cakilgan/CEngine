@@ -186,6 +186,9 @@ public class SnakeGameScene extends CEScene {
         }else{
         fontRenderer.setText("FPS:["+(int)CEngine.TIME.getFps()+"] gameOver=? "+snake.isGameOver()+" "+" Ms: "+snake.getMs()+" snake: "+snake.getId()+" score: "+snake.getScore()+" HighScore: "+snake.getHighScore());
         }
+        if (CEngine.KEYBOARD.isKeyJustPressed(GLFW.GLFW_KEY_ESCAPE)){
+            CEngine.SCENE.setScene(new SnakeGameMenuScene());
+        }
         fontRenderer.update(dt);
         super.update(dt);
     }
