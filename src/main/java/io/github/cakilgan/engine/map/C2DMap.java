@@ -1,6 +1,7 @@
 package io.github.cakilgan.engine.map;
 
 import io.github.cakilgan.cgraphics.c2d.render.C2DDebugDraw;
+import io.github.cakilgan.cgraphics.c2d.render.sprite.C2DQuadSprite;
 import io.github.cakilgan.cgraphics.c2d.render.sprite.C2DSprite;
 import io.github.cakilgan.cgraphics.c2d.render.sprite.C2DSpriteSheet;
 import io.github.cakilgan.engine.CEngine;
@@ -13,6 +14,7 @@ import io.github.cakilgan.physics.CPBody;
 import org.joml.Vector2f;
 import org.joml.Vector2i;
 import org.joml.Vector3f;
+import org.joml.Vector4f;
 
 import java.util.HashMap;
 import java.util.function.BiConsumer;
@@ -68,8 +70,21 @@ public class C2DMap {
 
 
     }
+    public void colorize(Vector4f color){
+        for (C2DMapObject mapObject : mapObjects) {
+            mapObject.getObject().getSprite("sprite").getColor().set(color);
+        }
+    }
     public void objectSetup(CEScene scene){
         for (C2DMapObject mapObject : mapObjects) {
+            scene.addObject(mapObject.getObject());
+        }
+    }
+    public void useForObjectSetup(CEScene scene){
+        for (C2DMapObject mapObject : mapObjects) {
+            C2DSprite sprite = C2DQuadSprite.createForBatch(null,new Vector2f(),new Vector2f(objectWidth,objectHeight),0f);
+            sprite.getColor().set(0,0,0,0);
+            mapObject.getObject().addComponent("sprite", sprite);
             scene.addObject(mapObject.getObject());
         }
     }

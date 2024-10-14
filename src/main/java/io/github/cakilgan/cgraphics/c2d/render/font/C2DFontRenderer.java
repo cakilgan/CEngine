@@ -14,6 +14,9 @@ public class C2DFontRenderer extends CEOComponent {
     public void setText(String text) {
         component.set(text);
     }
+    public String getText(){
+        return component.getComponent();
+    }
 
     C2DFont font;
     Vector2f fontSize;
@@ -46,7 +49,7 @@ public class C2DFontRenderer extends CEOComponent {
         for (int i = 0; i < sprites.length; i++) {
             sprites[i].setZPos(zpos);
             sprites[i].setDontSyncZpos(true);
-            sprites[i].getColor().set(colorize.x,colorize.y,colorize.z);
+            sprites[i].getColor().set(colorize.x,colorize.y,colorize.z,1);
             getParent().addComponent("font["+i+"]",sprites[i]);
         }
         initLength = sprites.length;
@@ -64,7 +67,7 @@ public class C2DFontRenderer extends CEOComponent {
                 }
                 C2DSprite sprite = (C2DSprite) getParent().getComponent("font["+i+"]");
                 if (sprite!=null){
-                    sprite.getColor().set(colorize.x,colorize.y,colorize.z);
+                    sprite.getColor().set(colorize.x,colorize.y,colorize.z,1);
                 ((C2DGeo)sprite.mesh()).setTexCoords(((C2DGeo)spriteCopy.mesh()).getTexCoords());
                 }
             }
@@ -72,7 +75,7 @@ public class C2DFontRenderer extends CEOComponent {
                 for (int i = sprites.length; i < initLength; i++) {
                     C2DSprite spriteCopy = font.spriteSheet.getSprites().get(0);
                     C2DSprite sprite = (C2DSprite) getParent().getComponent("font["+i+"]");
-                    sprite.getColor().set(colorize.x,colorize.y,colorize.z);
+                    sprite.getColor().set(colorize.x,colorize.y,colorize.z,1);
                     ((C2DGeo)sprite.mesh()).setTexCoords(((C2DGeo)spriteCopy.mesh()).getTexCoords());
                 }
             }

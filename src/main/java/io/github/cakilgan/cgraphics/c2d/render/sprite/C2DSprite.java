@@ -15,6 +15,11 @@ import org.joml.Vector2f;
 import org.joml.Vector4f;
 
 public class C2DSprite extends CEOComponent implements IBindUnbind {
+    String pointer = "";
+    public void setPointer(String pointer) {
+        this.pointer = pointer;
+    }
+
     static CLogger LOGGER = CLoggerSystem.logger(C2DSprite.class);
     boolean flag;
 
@@ -152,7 +157,9 @@ public class C2DSprite extends CEOComponent implements IBindUnbind {
         if (mesh instanceof C2DGeo){
             ((C2DGeo) mesh).dispose();
         }
+        if (texture!=null){
         texture.unbind();
+        }
         this.scale = null;
         this.position = null;
     }
@@ -186,12 +193,19 @@ public class C2DSprite extends CEOComponent implements IBindUnbind {
     public C2DSprite copyWithoutTransform(){
         C2DSprite sprite = new C2DSprite(getTexture(),mesh);
         sprite.setDirection(direction);
+        sprite.setPointer(pointer);
         return sprite;
     }
 
     public void set(C2DSprite sprite) {
         this.texture = sprite.texture;
         this.mesh = sprite.mesh;
+        this.getColor().set(sprite.getColor());
+        this.pointer = sprite.pointer;
         setDirection(sprite.getDirection());
+    }
+
+    public String getPointer() {
+        return pointer;
     }
 }

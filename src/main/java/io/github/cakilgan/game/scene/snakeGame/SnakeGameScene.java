@@ -16,6 +16,7 @@ import io.github.cakilgan.core.io.FileHelper;
 import io.github.cakilgan.core.CakilganCore;
 import io.github.cakilgan.engine.map.C2DMap;
 import io.github.cakilgan.engine.CEngine;
+import org.joml.Vector4f;
 import org.lwjgl.glfw.GLFW;
 import org.joml.Vector2f;
 import org.joml.Vector2i;
@@ -41,6 +42,7 @@ public class SnakeGameScene extends CEScene {
         getCamera().getPosition().set(new Vector3f(960,-540,getCamera().getPosition().z));
         //map setup
         map = new MapFileScriptEngine().parse(CEngine.RESOURCE_MANAGER.getDirectoryResource("gameRes").getDir("data").getDir("map").getFile("snakeGame.c2dmap"));
+        map.colorize(new Vector4f(1,1,1,1));
         map.objectSetup(this);
         //map.setDebugDrawAll();
         // ;

@@ -92,7 +92,11 @@ public class C2DFont {
             );
             sprite.setZPos(getRenderer().getParent().getTransform().getZPos());
             sprite.setScale(renderer.fontSize);
+            if (i!=0){
             sprite.setCompPos(new Vector2f(xPos+this.xSpacing, yPos-this.ySpacing));
+            }else{
+                sprite.setCompPos(new Vector2f(xPos, yPos-this.ySpacing));
+            }
             charSprites[i] = sprite;
         }
         return charSprites;

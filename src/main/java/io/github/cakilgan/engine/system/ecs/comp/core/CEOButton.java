@@ -28,7 +28,9 @@ public class CEOButton extends CEOComponent {
 
     @Override
     public void update(double dt) {
+        if (fontRenderer!=null){
         fontRenderer.setText(buttonText);
+        }
         mousePos = getParent().getParent().getScene().getCamera().screenToWorld((float) CEngine.MOUSE.getX(), (float) CEngine.MOUSE.getY());
         Vector2f objpos = getParent().getTransform().getPos();
         xs = objpos.x+getParent().getTransform().getScale().x/2;
