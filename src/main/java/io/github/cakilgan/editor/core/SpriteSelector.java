@@ -49,6 +49,21 @@ public class SpriteSelector {
         return scale;
     }
 
+    public void addSpriteSheetOnRun(String code,String path,Vector2i scale){
+        this.spriteSheetCode = code;
+        this.scale = scale;
+        this.spriteSheetPath = path;
+        C2DSpriteSheet spriteSheet=
+                C2DSpriteSheet.readFromTextureMetadata(new TextureFileResource(new FileResource(path),scale));
+        for (int i = sprites.size(); i < spriteSheet.getSprites().size(); i++) {
+            if (i>chars.length-1){
+                continue;
+            }
+            spriteSheet.getSprites().get(i).setPointer(chars[i]+"");
+            scene.getRenderer().add(spriteSheet.getSprites().get(i));
+            addSprite(i,spriteSheet.getSprites().get(i));
+        }
+    }
     public void addSpriteSheet(String code, String path, Vector2i scale){
         this.spriteSheetCode = code;
         this.scale = scale;
@@ -83,7 +98,7 @@ public class SpriteSelector {
         CEObject object = new CEObject(frame);
         object.addTransform(new CEOTransform(new Vector2f(),new Vector2f(width,height),0));
         object.addComponent("debug",new C2DDebugDraw());
-        object.addComponent("camLock",new CEOCameraLock(new Vector2f(-width/2f,1080-height/2f)));
+        object.addComponent("camLock",new CEOCameraLock(new Vector2f(-width/2f,scene.getCamera().getHeight()-height/2f)));
         scene.addObject(object);
         for (C2DMapObject mapObject : map.getMapObjects()) {
             CEOObjectLock lock = new CEOObjectLock(object);

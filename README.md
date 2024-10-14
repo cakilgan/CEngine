@@ -161,11 +161,11 @@ parseMap {
 with this file engine creates a map 960 width 960 height with 48x48 objects and uses the tileset of desired path. Pointers registered in addPointer method. And used in parseMap method.
 
 I think this is a bothersome job so i created a editor for this.
-![img.png](img.png)
+![img_4.png](img_4.png)
 red box shows that what textarea you are you can move by up and down arrows.
 ![img_1.png](img_1.png)
 when you click the create map button 
-![img_2.png](img_2.png)
+![img_3.png](img_3.png)
 1. in the map red box shows the tile you are in.
 2. choose the sprite you want to use on the left and click on map to paste.
 3. if you press ctrl+left-click on the sprite you want, all the map will fill with it. 

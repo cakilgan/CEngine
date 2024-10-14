@@ -121,6 +121,11 @@ public class C2DMapEditorScene1 extends CEScene {
                                 -getObject(createMapButton).getTransform().getScale().x/2f,
                                 1080-getObject(createMapButton).getTransform().getScale().y/2f
                         )));
+        addButton(new CEObjectID("Exit"),"Exit".length());
+        getButton(buttonObjects.get(1)).setButtonText("Exit");
+        getObject(buttonObjects.get(1)).addComponent("camLock",new CEOCameraLock(
+                new Vector2f(-100,1080-425)
+        ));
 
         this.addATextAreaWithATag("Map Name: ",new Vector2f(-810,1080-75),-10f);
         this.addATextAreaWithATag("Start X: ",new Vector2f(-780-10,1080-125),0f);
@@ -189,6 +194,13 @@ public class C2DMapEditorScene1 extends CEScene {
         checkInputs();
         textAreas.get(focus).setText(renderText.toString());
 
+        for (CEObjectID buttonObject : buttonObjects) {
+            if (getButton(buttonObject).canClick){
+                getButton(buttonObject).getFontRenderer().setColorize(new Vector3f(1,0,0));
+            }else{
+                getButton(buttonObject).getFontRenderer().setColorize(new Vector3f(1,1,1));
+            }
+        }
         if (CEngine.KEYBOARD.isKeyJustPressed(GLFW_KEY_DOWN)){
             focus++;
         }
@@ -196,8 +208,7 @@ public class C2DMapEditorScene1 extends CEScene {
             focus--;
         }
         if (CEngine.MOUSE.isLeftClicked()){
-            for (CEObjectID buttonObject : buttonObjects) {
-                if (getButton(buttonObject).canClick){
+                if (getButton(buttonObjects.get(0)).canClick){
                     MapCore core = new MapCore();
                     String mapName;
                     int mapX,mapY;
@@ -215,7 +226,9 @@ public class C2DMapEditorScene1 extends CEScene {
                     scene2.setCore(core);
                     CEngine.SCENE.setScene(scene2);
                 }
-            }
+                if (getButton(buttonObjects.get(1)).canClick){
+                    CEngine.ENGINE.setShouldExit(true);
+                }
         }
         if (CEngine.KEYBOARD.isKeyJustPressed(GLFW_KEY_ENTER)){
             textAreas.get(0).setText("MapTest");

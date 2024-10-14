@@ -12,6 +12,11 @@ public class CEOButton extends CEOComponent {
     }
 
     C2DFontRenderer fontRenderer;
+
+    public C2DFontRenderer getFontRenderer() {
+        return fontRenderer;
+    }
+
     public void setFontRenderer(C2DFontRenderer fontRenderer) {
         this.fontRenderer = fontRenderer;
     }

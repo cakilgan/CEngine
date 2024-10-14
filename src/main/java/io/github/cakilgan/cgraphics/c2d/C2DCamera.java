@@ -21,6 +21,36 @@ import java.util.List;
 import java.util.function.BiConsumer;
 
 public class C2DCamera extends ICamera implements CESceneComponent {
+    public void zoom(float zoomFactor) {
+        // Zoom faktörünü uygulayarak genişliği ve yüksekliği güncelle
+        width *= zoomFactor;
+        height *= zoomFactor;
+
+        // Yeni sol, sağ, alt ve üst değerleri hesapla
+        left = -width/2;
+        right = width / 2;
+        bottom = -height / 2;
+        top = height / 2;
+
+        // Projeksiyonu güncelle
+        updateProjection();
+        scene.objectSystem().getObjects().forEach(new BiConsumer<CEObjectID, CEObject>() {
+            @Override
+            public void accept(CEObjectID ceObjectID, CEObject object) {
+                object.getComponents().forEach(new BiConsumer<String, CEOComponent>() {
+                    @Override
+                    public void accept(String s, CEOComponent ceoComponent) {
+                        if (ceoComponent instanceof CEOCameraLock) {
+                            // Yeni konumu hesapla ve ayarla
+                            CEOCameraLock cameraLock = (CEOCameraLock) ceoComponent;
+                            Vector2f offset = cameraLock.getAdd();
+                            object.getTransform().getPos().set(position.x + offset.x, position.y + offset.y);
+                        }
+                    }
+                });
+            }
+        });
+    }
     public static C2DCamera createForBatch(Vector3f pos,float width,float height){
         C2DCamera camera = new C2DCamera(pos,width,height);
         camera.setProjectionCode("uProjection");
