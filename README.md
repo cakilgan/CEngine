@@ -101,6 +101,75 @@ public class MainGame implements CEComponent, HasLogger {
 }
 ```
 5. see the example in the io.github.cakilgan.game package.
+## C2DMap Editor
+ #### C2DMap
+C2DMap is a class for implementing easy maps for games.
+Normally you must do it all the job yourself by creating a map file and manually writing.
+an example .c2dmap file.
+```
+//50,25
+constructor {
+   0,0,snakeGameScene
+}
+init {
+ 960,960,48,48
+}
+addSpriteSheet {
+tileset src/main/resources/game/assets/snakegame/atlas.png 170 170,
+}
+addSprite {
+}
+setSprite {
+}
+setZPos {
+all 400 -100
+}
+addPointer {
+4 tileset[33] ,
+5 tileset[21],
+6 tileset[22],
+7 tileset[23],
+8 tileset[26],
+9 tileset[25],
+a tileset[24],
+b tileset[31],
+c tileset[32]
+}
+parseMap {
+5bbbbbbbbbbbbbbbbbb8
+64444444444444444449
+64444444444444444449
+64444444444444444449
+64444444444444444449
+64444444444444444449
+64444444444444444449
+64444444444444444449
+64444444444444444449
+64444444444444444449
+64444444444444444449
+64444444444444444449
+64444444444444444449
+64444444444444444449
+64444444444444444449
+64444444444444444449
+64444444444444444449
+64444444444444444449
+64444444444444444449
+7cccccccccccccccccca
+}
+```
+with this file engine creates a map 960 width 960 height with 48x48 objects and uses the tileset of desired path. Pointers registered in addPointer method. And used in parseMap method.
+
+I think this is a bothersome job so i created a editor for this.
+![img.png](img.png)
+red box shows that what textarea you are you can move by up and down arrows.
+![img_1.png](img_1.png)
+when you click the create map button 
+![img_2.png](img_2.png)
+1. in the map red box shows the tile you are in.
+2. choose the sprite you want to use on the left and click on map to paste.
+3. if you press ctrl+left-click on the sprite you want, all the map will fill with it. 
+4. when you are all done press enter to save the mapFile.
 ## Games
  ### SnakeGame
  ![img1.png](img1.png)
