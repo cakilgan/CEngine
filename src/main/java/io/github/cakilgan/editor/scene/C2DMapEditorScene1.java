@@ -13,6 +13,7 @@ import io.github.cakilgan.engine.system.ecs.core.CEObject;
 import io.github.cakilgan.engine.system.ecs.util.CEObjectID;
 import io.github.cakilgan.engine.window.scene.CEScene;
 import org.joml.Vector2f;
+import org.joml.Vector3f;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.ArrayList;
@@ -29,7 +30,7 @@ public class C2DMapEditorScene1 extends CEScene {
         font.set(-10f,5f);
         CEObject buttonObject = new CEObject(buttonObjectID);
         buttonObject.addTransform(new CEOTransform(new Vector2f(-960,590),new Vector2f(32*textCount-((textCount*10-10)),50),0f));
-        buttonObject.addComponent("debug",new C2DDebugDraw());
+        //buttonObject.addComponent("debug",new C2DDebugDraw());
         buttonObject.addComponent("button",new CEOButton());
         C2DFontRenderer buttonFont = new C2DFontRenderer(font,new Vector2f(32f,32f));
         buttonFont.setZpos(5f);
@@ -52,7 +53,7 @@ public class C2DMapEditorScene1 extends CEScene {
         font.set(-7f,5f);
         CEObject buttonObject = new CEObject(textAreaObjectID);
         buttonObject.addTransform(new CEOTransform(new Vector2f(-960,590),new Vector2f(32*textCount-((textCount*10-10)),50),0f));
-        buttonObject.addComponent("debug",new C2DDebugDraw());
+        //buttonObject.addComponent("debug",new C2DDebugDraw());
         C2DFontRenderer buttonFont = new C2DFontRenderer(font,new Vector2f(32f,32f));
         buttonFont.setZpos(5f);
         buttonFont.setParent(buttonObject);
@@ -103,8 +104,15 @@ public class C2DMapEditorScene1 extends CEScene {
         return createMapTextAreaFontRenderer;
     }
     List<C2DFontRenderer> textAreas = new ArrayList<>();
+    CEObjectID textAreaHolderID = new CEObjectID("textAreaHolder");
     @Override
     public void init() {
+        getCamera().setCanMoveWithWASD(false);
+        CEObject textAreaHolder = new CEObject(textAreaHolderID);
+        textAreaHolder.addTransform(new CEOTransform(new Vector2f(),new Vector2f(32*50-((50*10-10)),50),0f));
+        textAreaHolder.addComponent("debug",new C2DDebugDraw().setColorcode(new Vector3f(1,0,0)));
+        addObject(textAreaHolder);
+
         addButton(createMapButton,10);
         getButton(createMapButton).setButtonText("Create Map");
         getObject(createMapButton).addComponent("camLock",
@@ -176,6 +184,7 @@ public class C2DMapEditorScene1 extends CEScene {
         if (focus>textAreas.size()-1||focus<0){
             focus = 0;
         }
+        getObject(textAreaHolderID).getTransform().getPos().set(textAreas.get(focus).getParent().getTransform().getPos());
         renderText = new StringBuilder(textAreas.get(focus).getText());
         checkInputs();
         textAreas.get(focus).setText(renderText.toString());

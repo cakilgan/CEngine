@@ -41,7 +41,7 @@ public class C2DMapEditorScene2  extends CEScene {
 
         spriteSelector = new SpriteSelector(this);
         spriteSelector.init(500,500,50,50);
-        spriteSelector.addSpriteSheet("tileset","C:\\Users\\enesk\\IdeaProjects\\CEngine\\src\\main\\resources\\game\\assets\\snakegame\\atlas.png",new Vector2i(170,170));
+        spriteSelector.addSpriteSheet("tileset","src/main/resources/game/assets/snakegame/atlas.png",new Vector2i(170,170));
         //spriteSelector.addSpriteSheet("C:\\Users\\enesk\\IdeaProjects\\CEngine\\src\\main\\resources\\engine\\assets\\textures\\player.png",new Vector2i(256,256));
 
         map = new C2DMap(new Vector2i(core.mapX,core.mapY),core.mapName);
@@ -153,6 +153,9 @@ public class C2DMapEditorScene2  extends CEScene {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
+        }
+        if (CEngine.KEYBOARD.isKeyJustPressed(GLFW.GLFW_KEY_ESCAPE)){
+            CEngine.SCENE.setScene(new C2DMapEditorScene1());
         }
         spriteSelector.update();
         super.update(dt);
