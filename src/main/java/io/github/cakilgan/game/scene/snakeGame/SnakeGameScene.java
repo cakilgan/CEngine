@@ -46,9 +46,9 @@ public class SnakeGameScene extends CEScene {
         // ;
         //fps font setup.
         C2DFont font = new C2DFont(
-                new C2DTexture(CEngine.RESOURCE_MANAGER.textures().getFile("default_font_2.png"),new Vector2i(816,306)),
-                51,
-                51,
+                new C2DTexture(CEngine.RESOURCE_MANAGER.textures().getFile("font.png"),new Vector2i(1024,384)),
+                384/6,
+                1024/16,
                 16,
                 6,
                 0
