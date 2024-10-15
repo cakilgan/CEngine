@@ -156,18 +156,18 @@ public class MapFileScriptEngine extends CakilganScriptEngine {
             @Override
             public void action(String value) {
                 List<String> values = Text.convertDottedStringToList(value);
+                    int count=0;
                 for (String string : values) {
                     List<String> lines = Text.makeList(string);
-                    int count=0;
                     for (int i = 0; i < lines.size(); i++) {
-                        for (int i1 = 0; i1 < lines.get(i).toCharArray().length; i1++) {
-                           char a =  lines.get(i).toCharArray()[i1];
+                        for (int i1 = 0; i1 < Text.convertDottedStringToList(lines.get(i)).size(); i1++) {
+                           String a =  Text.convertDottedStringToList(lines.get(i)).get(i1);
                            List<String> strings = new ArrayList<>();
                            strings.add("sprite");
-                           strings.add(pointers.get(a+""));
+                           strings.add(pointers.get(a));
                            spriteCodes.put(count,strings);
-                           if (bodyPointers.get(a+"")!=null){
-                               bodyCodes.put(count,bodyPointers.get(a+""));
+                           if (bodyPointers.get(a)!=null){
+                               bodyCodes.put(count,bodyPointers.get(a));
                            }
                             count++;
                         }

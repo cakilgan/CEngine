@@ -268,6 +268,29 @@ public class C2DCamera extends ICamera implements CESceneComponent {
 
         return new Vector3f(worldCoords.x, worldCoords.y, worldCoords.z);
     }
+    public Vector2f worldToScreen(Vector3f worldPos) {
+        // Dünya koordinatlarını clip space'e çevir
+        Vector4f worldCoords = new Vector4f(worldPos.x, worldPos.y, worldPos.z, 1.0f);
+
+        // View ve Projection matrislerini uygula
+        Vector4f clipCoords = projection.transform(new Vector4f(view.transform(worldCoords)));
+
+        // Perspektif bölmeyi uygula
+        if (clipCoords.w != 0.0f) {
+            clipCoords.div(clipCoords.w);
+        }
+
+        // NDC'den ekran koordinatlarına çevir
+        float windowWidth = CEngine.WINDOW.getConfig().w;
+        float windowHeight = CEngine.WINDOW.getConfig().h;
+
+        float screenX = (clipCoords.x * 0.5f + 0.5f) * windowWidth;
+        float screenY = (1.0f - (clipCoords.y * 0.5f + 0.5f)) * windowHeight;
+
+        return new Vector2f(screenX, screenY);
+    }
+
+
 
 
     public List<CEObject> objects = new ArrayList<>();

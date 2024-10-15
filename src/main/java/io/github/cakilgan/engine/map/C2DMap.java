@@ -4,8 +4,11 @@ import io.github.cakilgan.cgraphics.c2d.render.C2DDebugDraw;
 import io.github.cakilgan.cgraphics.c2d.render.sprite.C2DQuadSprite;
 import io.github.cakilgan.cgraphics.c2d.render.sprite.C2DSprite;
 import io.github.cakilgan.cgraphics.c2d.render.sprite.C2DSpriteSheet;
+import io.github.cakilgan.clogger.CLogger;
+import io.github.cakilgan.clogger.system.CLoggerSystem;
 import io.github.cakilgan.engine.CEngine;
 import io.github.cakilgan.engine.map.comp.C2DMapObject;
+import io.github.cakilgan.engine.system.HasLogger;
 import io.github.cakilgan.engine.system.ecs.comp.CEOTransform;
 import io.github.cakilgan.engine.system.ecs.core.CEObject;
 import io.github.cakilgan.engine.system.ecs.util.CEObjectID;
@@ -19,7 +22,7 @@ import org.joml.Vector4f;
 import java.util.HashMap;
 import java.util.function.BiConsumer;
 
-public class C2DMap {
+public class C2DMap implements HasLogger {
     public HashMap<String, C2DSpriteSheet> spriteSheets;
     HashMap<String,C2DSprite> sprites;
     C2DMapObject[] mapObjects;
@@ -140,6 +143,10 @@ public class C2DMap {
         sprites.put(code,sprite);
     }
     public void setSprite(int index,String compCode,String code){
+        if (index>=mapObjects.length){
+            getLogger().warn("index is full ignoring this pointer > "+index+"-"+code);
+            return;
+        }
         C2DSprite sprite = sprites.get(code).copyWithoutTransform();
         sprite.setScale(new Vector2f(objectWidth,objectHeight));
         mapObjects[index].getObject().addComponent(compCode,sprite);
@@ -147,5 +154,10 @@ public class C2DMap {
 
     public C2DMapObject[] getMapObjects() {
         return mapObjects;
+    }
+
+    @Override
+    public CLogger getLogger() {
+        return CLoggerSystem.logger(this.getClass());
     }
 }

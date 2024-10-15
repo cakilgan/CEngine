@@ -182,7 +182,7 @@ public class C2DMapEditorScene2  extends CEScene {
                         if (obj != null && obj.getObject() != null) {
                             C2DSprite sprite = obj.getObject().getSprite("sprite");
                             if (sprite != null) {
-                                helper.write(sprite.getPointer());
+                                helper.write(sprite.getPointer()+",");
                             }
                         }
 

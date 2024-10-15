@@ -20,7 +20,7 @@ public class SnakeGameMenuScene extends CEScene {
     C2DFontRenderer fontRenderer,buttonFont,button2Font;
     @Override
     public void init() {
-        getCamera().setCanMoveWithWASD(false);
+        //getCamera().setCanMoveWithWASD(false);
 
         C2DFont font = C2DFont.DEFAULT_FONT_2.copy();
         font.set(-10f,0);
@@ -81,7 +81,9 @@ public class SnakeGameMenuScene extends CEScene {
     public void update(double dt) {
         CEOButton button = (CEOButton) getObject(this.buttonObjectID).getComponent("button");
         CEOButton button2 = (CEOButton) getObject(this.buttonObject2ID).getComponent("button");
-        fontRenderer.setText("pos: "+button.mousePos.x+" "+button.mousePos.y+" canClick: "+button.canClick);
+        fontRenderer.setText("pos: "+button.mousePos.x+" "+button.mousePos.y+" buttonVertex: "+
+                button.buttonVertex.x+" "+button.buttonVertex.y+" "+button.buttonVertex.z+" "+button.buttonVertex.w+
+                "canClick: "+button.canClick);
         if (button.canClick){
             buttonFont.setColorize(new Vector3f(1,0,0));
         }else{

@@ -8,6 +8,7 @@ import io.github.cakilgan.clogger.format.CLColor;
 import io.github.cakilgan.clogger.intf.ICLogger;
 import io.github.cakilgan.clogger.format.Level;
 import io.github.cakilgan.clogger.util.Text;
+import io.github.cakilgan.engine.CEngine;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -228,6 +229,7 @@ public class CLogger implements ICLogger {
     @Override
     public void exc(Exception e, String msg, CLoggerContext context) {
         fatal(context.format()+" "+msg+" - "+e.getLocalizedMessage());
+        e.printStackTrace(New);
         try {
             throw  e;
         } catch (Exception ex) {

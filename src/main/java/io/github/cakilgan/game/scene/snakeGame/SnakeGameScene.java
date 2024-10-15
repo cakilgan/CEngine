@@ -41,7 +41,7 @@ public class SnakeGameScene extends CEScene {
         getCamera().setCanMoveWithWASD(false);
         getCamera().getPosition().set(new Vector3f(960,-540,getCamera().getPosition().z));
         //map setup
-        map = new MapFileScriptEngine().parse(CEngine.RESOURCE_MANAGER.getDirectoryResource("gameRes").getDir("data").getDir("map").getFile("snakeGame.c2dmap"));
+        map = new MapFileScriptEngine().parse(CEngine.RESOURCE_MANAGER.getDirectoryResource("gameRes").getDir("data").getDir("map").getFile("snakeGameMap.c2dmap"));
         map.colorize(new Vector4f(1,1,1,1));
         map.objectSetup(this);
         //map.setDebugDrawAll();

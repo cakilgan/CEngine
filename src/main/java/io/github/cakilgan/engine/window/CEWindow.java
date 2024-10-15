@@ -9,6 +9,7 @@ import io.github.cakilgan.engine.system.RunOnLastLineOfWhileLoop;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.glfw.GLFWFramebufferSizeCallbackI;
 import org.lwjgl.glfw.GLFWVidMode;
+import org.lwjgl.glfw.GLFWWindowSizeCallback;
 import org.lwjgl.opengl.GL;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.system.MemoryStack;
@@ -63,7 +64,13 @@ public class CEWindow implements CEComponent, RunOnLastLineOfWhileLoop, HasLogge
                     (vidmode.height() - pHeight.get(0)) / 2
             );
         }
-
+        glfwSetWindowSizeCallback(window, new GLFWWindowSizeCallback() {
+            @Override
+            public void invoke(long l, int i, int i1) {
+                config.w = i;
+                config.h = i1;
+            }
+        });
         glfwSetFramebufferSizeCallback(window, new GLFWFramebufferSizeCallbackI() {
             @Override
             public void invoke(long l, int i, int i1) {
