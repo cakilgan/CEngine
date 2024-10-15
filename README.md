@@ -220,8 +220,13 @@ when you click the create map button
  ![img1.png](img1.png)
  ![img2.png](img2.png)
  - Use arrow keys to play.
- - Press enter the try again when you lost.
+ - Press enter to try again when you lost.
  - Shows the fps,move ms,score
+ - It stores high score in highscore.dat and loads from there when game is restarted.
+ ### Flappy Bird Clone
+ ![img_5.png](img_5.png)
+ - Use arrow keys to play.
+ - Press enter to try again when you lost.
  - It stores high score in highscore.dat and loads from there when game is restarted.
 ## To-Do
 
