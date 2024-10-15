@@ -106,56 +106,101 @@ public class MainGame implements CEComponent, HasLogger {
 C2DMap is a class for implementing easy maps for games.
 Normally you must do it all the job yourself by creating a map file and manually writing.
 an example .c2dmap file.
-```
-//50,25
+``` c2dmap
+
 constructor {
-   0,0,snakeGameScene
+0,0,snakeGameMap
 }
 init {
- 960,960,48,48
+960,960,48,48
 }
 addSpriteSheet {
 tileset src/main/resources/game/assets/snakegame/atlas.png 170 170,
 }
-addSprite {
-}
-setSprite {
-}
-setZPos {
-all 400 -100
-}
 addPointer {
-4 tileset[33] ,
-5 tileset[21],
-6 tileset[22],
-7 tileset[23],
-8 tileset[26],
-9 tileset[25],
-a tileset[24],
-b tileset[31],
-c tileset[32]
+1 tileset[0],
+2 tileset[1],
+3 tileset[2],
+4 tileset[3],
+5 tileset[4],
+6 tileset[5],
+7 tileset[6],
+8 tileset[7],
+9 tileset[8],
+0 tileset[9],
+a tileset[10],
+b tileset[11],
+c tileset[12],
+d tileset[13],
+e tileset[14],
+f tileset[15],
+g tileset[16],
+h tileset[17],
+i tileset[18],
+j tileset[19],
+k tileset[20],
+l tileset[21],
+m tileset[22],
+o tileset[23],
+p tileset[24],
+r tileset[25],
+s tileset[26],
+t tileset[27],
+u tileset[28],
+v tileset[29],
+y tileset[30],
+z tileset[31],
+w tileset[32],
+x tileset[33],
+A tileset[34],
+B tileset[35],
+C tileset[36],
+D tileset[37],
+E tileset[38],
+F tileset[39],
+G tileset[40],
+H tileset[41],
+I tileset[42],
+J tileset[43],
+K tileset[44],
+L tileset[45],
+M tileset[46],
+N tileset[47],
+O tileset[48],
+P tileset[49],
+R tileset[50],
+S tileset[51],
+T tileset[52],
+U tileset[53],
+V tileset[54],
+Y tileset[55],
+Z tileset[56],
+X tileset[57],
+W tileset[58],
 }
 parseMap {
-5bbbbbbbbbbbbbbbbbb8
-64444444444444444449
-64444444444444444449
-64444444444444444449
-64444444444444444449
-64444444444444444449
-64444444444444444449
-64444444444444444449
-64444444444444444449
-64444444444444444449
-64444444444444444449
-64444444444444444449
-64444444444444444449
-64444444444444444449
-64444444444444444449
-64444444444444444449
-64444444444444444449
-64444444444444444449
-64444444444444444449
-7cccccccccccccccccca
+l,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,z,s,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+m,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,r,
+o,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,w,p,
+
+
 }
 ```
 with this file engine creates a map 960 width 960 height with 48x48 objects and uses the tileset of desired path. Pointers registered in addPointer method. And used in parseMap method.
