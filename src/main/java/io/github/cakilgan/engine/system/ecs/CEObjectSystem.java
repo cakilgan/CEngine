@@ -9,6 +9,7 @@ import io.github.cakilgan.engine.window.scene.CEScene;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.function.BiConsumer;
 
 public class CEObjectSystem implements CESceneComponent {
     HashMap<CEObjectID,CEObject> objects;
@@ -30,6 +31,13 @@ public class CEObjectSystem implements CESceneComponent {
         this.objects.put(object.getID(),object);
     }
     public CEObject getObject(CEObjectID ID){
+        if (objects.get(ID)==null){
+            for (CEObjectID ceObjectID : objects.keySet()) {
+                if (ceObjectID.ID().equals(ID.ID())){
+                    return objects.get(ceObjectID);
+                }
+            }
+        }
        return objects.get(ID);
     }
     @Override

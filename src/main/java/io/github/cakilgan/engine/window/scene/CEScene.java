@@ -46,6 +46,9 @@ public abstract class CEScene extends CScene {
     public void addObject(CEObject object){
         objectSystem().addObject(object);
     }
+    public CEObject getObject(String id){
+        return objectSystem().getObject(new CEObjectID(id));
+    }
     public CEObject getObject(CEObjectID ID){
         return objectSystem().getObject(ID);
     }

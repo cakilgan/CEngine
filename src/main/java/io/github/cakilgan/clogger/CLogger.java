@@ -83,7 +83,11 @@ public class CLogger implements ICLogger {
         ElementWithType<String> context = (ElementWithType<String>) formatter.getElements().get("context");
         context.setType(Objects.requireNonNullElse(currentContext,new CLoggerContext("")).format());
         ElementWithType<String> classElement = (ElementWithType<String>) formatter.getElements().get("className");
+        if (aClass.getSimpleName().isEmpty()){
+        classElement.setType("anon/[or]/nullClass");
+        }else{
         classElement.setType(aClass.getSimpleName());
+        }
         ElementWithType<String> msgElement = (ElementWithType<String>) formatter.getElements().get("msg");
         msgElement.setType(msg);
         ElementWithType<String> levelElement = (ElementWithType<String>) formatter.getElements().get("level");
