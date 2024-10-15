@@ -1,0 +1,7 @@
+Integer {
+spriteWidth: [ 34 ],
+spriteHeight: [ 24 ],
+xCount: [ 3 ],
+yCount: [ 1 ],
+spriteSpacing: [ 0 ],
+}

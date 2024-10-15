@@ -117,6 +117,9 @@ public class C2DSprite extends CEOComponent implements IBindUnbind {
         if (!dontSyncZpos){
         setZPos(getParent().getTransform().getZPos());
         }
+        if (getTexture()!=null){
+            getTexture().create();
+        }
         getParent().getParent().getScene().getRenderer().add(this);
         super.init();
     }

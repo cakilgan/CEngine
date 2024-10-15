@@ -30,6 +30,10 @@ public class CPBody<T extends Shapes> extends CEOComponent {
         this.syncWithObject = syncWithObject;
     }
 
+    public void set(float width,float height){
+        Polygon polygon = new Polygon(width/2f,height/2f);
+        body.shape = polygon;
+    }
     public T getShape() {
         return shape;
     }

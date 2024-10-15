@@ -69,9 +69,6 @@ public class C2DMapEditorScene1 extends CEScene {
     List<C2DFontRenderer> buttonFontRenderers = new ArrayList<>();
     List<CEObjectID> buttonObjects = new ArrayList<>();
     CEObjectID createMapButton = new CEObjectID("b_CreateMap");
-    CEObjectID createMapTextArea = new CEObjectID("txA_CreateMap"),createMapNameText = new CEObjectID("txa_CreateMapName");
-    CEObjectID mapWidthTextArea = new CEObjectID("txA_MapWidth"),mapWidthText = new CEObjectID("txa_MapWidthValue");
-     C2DFontRenderer createMapTextAreaFontRenderer,mapWidthTextAreaFontRenderer;
 
     StringBuilder renderText = new StringBuilder();
     public void c(int code,String text){
@@ -119,21 +116,21 @@ public class C2DMapEditorScene1 extends CEScene {
                 new CEOCameraLock(
                         new Vector2f(
                                 -getObject(createMapButton).getTransform().getScale().x/2f,
-                                1080-getObject(createMapButton).getTransform().getScale().y/2f
+                                1080-getObject(createMapButton).getTransform().getScale().y/2f-600
                         )));
         addButton(new CEObjectID("Exit"),"Exit".length());
         getButton(buttonObjects.get(1)).setButtonText("Exit");
         getObject(buttonObjects.get(1)).addComponent("camLock",new CEOCameraLock(
-                new Vector2f(-100,1080-425)
+                new Vector2f(-100,1080-425-50)
         ));
 
-        this.addATextAreaWithATag("Map Name: ",new Vector2f(-810,1080-75),-10f);
-        this.addATextAreaWithATag("Start X: ",new Vector2f(-780-10,1080-125),0f);
-        this.addATextAreaWithATag("Start Y: ",new Vector2f(-780-10,1080-175),0f);
-        this.addATextAreaWithATag("Map Width: ",new Vector2f(-820-10,1080-225),-20f);
-        this.addATextAreaWithATag("Map Height: ",new Vector2f(-840-10,1080-275),-30f);
-        this.addATextAreaWithATag("Object Width: ",new Vector2f(-880-10,1080-325),-50f);
-        this.addATextAreaWithATag("Object Height: ",new Vector2f(-900-10,1080-375),-60f);
+        this.addATextAreaWithATag("Map Name: ",new Vector2f(-810,1080-75-50),-10f);
+        this.addATextAreaWithATag("Start X: ",new Vector2f(-780-10,1080-125-50),0f);
+        this.addATextAreaWithATag("Start Y: ",new Vector2f(-780-10,1080-175-50),0f);
+        this.addATextAreaWithATag("Map Width: ",new Vector2f(-820-10,1080-225-50),-20f);
+        this.addATextAreaWithATag("Map Height: ",new Vector2f(-840-10,1080-275-50),-30f);
+        this.addATextAreaWithATag("Object Width: ",new Vector2f(-880-10,1080-325-50),-50f);
+        this.addATextAreaWithATag("Object Height: ",new Vector2f(-900-10,1080-375-50),-60f);
         super.init();
     }
     int focus = 0;

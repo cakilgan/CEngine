@@ -37,6 +37,12 @@ import static org.lwjgl.opengl.GL30.glGenVertexArrays;
 public class C2DDebugRenderer implements CESceneComponent {
     private  int MAX_LINES = 100000;
 
+    boolean shouldRender = true;
+
+    public void setShouldRender(boolean shouldRender) {
+        this.shouldRender = shouldRender;
+    }
+
     boolean shouldDebugRenderJPhysics = false;
 
     public void setShouldDebugRenderJPhysics(boolean shouldDebugRenderJPhysics) {
@@ -95,28 +101,30 @@ public class C2DDebugRenderer implements CESceneComponent {
     }
     public  void beginFrame() {
         lines = new ArrayList<>();
-        scene.objectSystem().getObjects().forEach(new BiConsumer<CEObjectID, CEObject>() {
-            @Override
-            public void accept(CEObjectID ceObjectID, CEObject object) {
-                final boolean[] tr = {false,false};
-                final Vector3f[] colorcode = new Vector3f[1];
-                final float[] zpos = new float[]{0f};
-                object.getComponents().forEach(new BiConsumer<String, CEOComponent>() {
-                    @Override
-                    public void accept(String s, CEOComponent ceoComponent) {
-                        if (ceoComponent instanceof C2DDebugDraw){
-                            tr[0] =true;
-                            colorcode[0] = ((C2DDebugDraw) ceoComponent).getColor();
-                            zpos[0] = ((C2DDebugDraw) ceoComponent).getZPos();
+        if (shouldRender){
+            scene.objectSystem().getObjects().forEach(new BiConsumer<CEObjectID, CEObject>() {
+                @Override
+                public void accept(CEObjectID ceObjectID, CEObject object) {
+                    final boolean[] tr = {false,false};
+                    final Vector3f[] colorcode = new Vector3f[1];
+                    final float[] zpos = new float[]{0f};
+                    object.getComponents().forEach(new BiConsumer<String, CEOComponent>() {
+                        @Override
+                        public void accept(String s, CEOComponent ceoComponent) {
+                            if (ceoComponent instanceof C2DDebugDraw){
+                                tr[0] =true;
+                                colorcode[0] = ((C2DDebugDraw) ceoComponent).getColor();
+                                zpos[0] = ((C2DDebugDraw) ceoComponent).getZPos();
+                            }
                         }
+                    });
+                    if (tr[0]){
+                        //addCircle(object.getTransform().getPos(),1f,new Vector3f(1,0,0));
+                        addBox2D(object.getTransform().getPos(),object.getTransform().getScale(),object.getTransform().getRotation(),colorcode[0],zpos[0]);
                     }
-                });
-                if (tr[0]){
-                    //addCircle(object.getTransform().getPos(),1f,new Vector3f(1,0,0));
-                    addBox2D(object.getTransform().getPos(),object.getTransform().getScale(),object.getTransform().getRotation(),colorcode[0],zpos[0]);
                 }
-            }
-        });
+            });
+        }
         if (isShouldDebugRenderJPhysics()) {
             for (Body body : scene.getWorld().getWorld().bodies) {
                 if (body.shape instanceof Polygon polygon){

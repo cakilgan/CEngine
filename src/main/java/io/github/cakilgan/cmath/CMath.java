@@ -15,6 +15,9 @@ public class CMath {
     public static Vectors2D to(Vector2d from){
         return new Vectors2D(from.x,from.y);
     }
+    public static Vectors2D to(Vector2f to){
+        return new Vectors2D(to.x,to.y);
+    }
     public static Vectors2D toFloat(Vector2f from){
         return new Vectors2D(from.x,from.y);
     }

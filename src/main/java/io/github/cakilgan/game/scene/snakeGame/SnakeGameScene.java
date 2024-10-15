@@ -92,8 +92,13 @@ public class SnakeGameScene extends CEScene {
             File file = new File("highscore.dat");
             FileHelper helper = CakilganCore.createHelper(file);
             try {
-                String highscore = helper.readWord();
-                snake.scores.add(Integer.valueOf(highscore));
+                helper.analyzeAndSetupTheFile();
+                for (String string : helper.readLines()) {
+                    if (string.contains("snakeGame:")){
+                        snake.scores.add(Integer.valueOf(string.substring(string.indexOf(":")+2)));
+                        break;
+                    }
+                }
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -135,13 +140,13 @@ public class SnakeGameScene extends CEScene {
         if (snake.getDirection()== UP){
             animation.play("up", (float) dt);
         }
-        if (snake.getDirection()== Snake.Direction.DOWN){
+        if (snake.getDirection()== DOWN){
             animation.play("down", (float) dt);
         }
-        if (snake.getDirection()== Snake.Direction.RIGHT){
+        if (snake.getDirection()== RIGHT){
             animation.play("right", (float) dt);
         }
-        if (snake.getDirection()== Snake.Direction.LEFT){
+        if (snake.getDirection()== LEFT){
             animation.play("left", (float) dt);
         }
         if (CEngine.KEYBOARD.isKeyJustPressed(GLFW.GLFW_KEY_RIGHT)||CEngine.KEYBOARD.isKeyJustPressed(GLFW.GLFW_KEY_LEFT)||CEngine.KEYBOARD.isKeyJustPressed(GLFW.GLFW_KEY_DOWN)||CEngine.KEYBOARD.isKeyJustPressed(GLFW.GLFW_KEY_UP)){
@@ -200,8 +205,17 @@ public class SnakeGameScene extends CEScene {
         int highScore = snake.getHighScore();
        FileHelper helper =  CakilganCore.createHelper(new File("highscore.dat"));
         try {
+            int val = 0;
+            helper.analyzeAndSetupTheFile();
+            for (String string : helper.readLines()) {
+                if (string.startsWith("flappyBirdGame:")){
+                    String sub = string.substring(string.indexOf(":")+2);
+                    val = Integer.parseInt(sub);
+                }
+            }
             helper.resetNotAppend();
-            helper.write(highScore+"");
+            helper.writeln("snakeGame: "+highScore);
+            helper.writeln("flappyBirdGame: "+val);
         helper.exitAndSave();
         } catch (IOException e) {
             throw new RuntimeException(e);
