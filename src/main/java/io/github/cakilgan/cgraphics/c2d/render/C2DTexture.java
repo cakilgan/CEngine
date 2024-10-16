@@ -19,6 +19,11 @@ public class C2DTexture implements AutoCloseable{
         return path;
     }
     boolean hasCreatedAlready;
+
+    public boolean hasCreatedAlready() {
+        return hasCreatedAlready;
+    }
+
     Vector2i scale;
 
     public Vector2i getScale() {
