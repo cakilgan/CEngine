@@ -223,7 +223,7 @@ public class FlappyBirdGameScene extends CEScene {
                     lastAngle = (float) getObject(characterObjectID).getBody("body").getBody().orientation;
                 }
             }
-            if (CEngine.KEYBOARD.isKeyJustPressed(GLFW.GLFW_KEY_SPACE)){
+            if (CEngine.KEYBOARD.isKeyJustPressed(GLFW.GLFW_KEY_SPACE)||CEngine.MOUSE.isLeftClicked()){
                 time = 3f;
                 getObject(characterObjectID).getBody("body").getBody().velocity.add(new Vectors2D(0,76f));
             }
@@ -293,7 +293,7 @@ public class FlappyBirdGameScene extends CEScene {
             getObject(characterObjectID).getBody("body").getBody().orientation = lastAngle;
             getObject(characterObjectID).getBody("body").getBody().position.set(lastPos);
 
-            if (CEngine.KEYBOARD.isKeyJustPressed(GLFW.GLFW_KEY_ENTER)){
+            if (CEngine.KEYBOARD.isKeyJustPressed(GLFW.GLFW_KEY_ENTER)||CEngine.KEYBOARD.isKeyJustPressed(GLFW.GLFW_KEY_SPACE)||CEngine.MOUSE.isLeftClicked()){
                 scores.add(score);
                 getObject(characterObjectID).getBody("body").getBody().position.set(new Vectors2D(-770,540));
                 getObject(pipes.get(0)).getBody("body").getBody().position.x =-960-311-52;
