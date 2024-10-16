@@ -19,7 +19,9 @@ public class TextureFileResource extends FileResource {
         this.type.setCreate(new BooleanConsumer<FileHelper>() {
             @Override
             public boolean accept(FileHelper obj) {
+                if (!texture.hasCreatedAlready()){
                 texture.create();
+                }
                 return false;
             }
         });

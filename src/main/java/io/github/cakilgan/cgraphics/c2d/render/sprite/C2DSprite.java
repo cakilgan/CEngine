@@ -146,7 +146,9 @@ public class C2DSprite extends CEOComponent implements IBindUnbind {
     public void setTexture(C2DTexture texture) {
         if (!ResourceID.getValue(this.texture.getPath().id.compareTo(texture.getPath().id))){
         this.texture = texture;
+        if (!this.texture.hasCreatedAlready()){
         this.texture.create();
+        }
         }else{
             LOGGER.warn("texture already added to sprite!");
         }

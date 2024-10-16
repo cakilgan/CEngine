@@ -47,7 +47,9 @@ public class C2DFont {
     String forparse;
     C2DSpriteSheet spriteSheet;
     public C2DFont(C2DTexture texture,int charHeight,int charWidth,int xCount,int yCount,int spacing,String parseString){
+        if (!texture.hasCreatedAlready()){
         texture.create();
+        }
         spriteSheet = new C2DSpriteSheet(texture,charWidth,charHeight,xCount,yCount,spacing);
         this.forparse = parseString;
         parse(parseString);

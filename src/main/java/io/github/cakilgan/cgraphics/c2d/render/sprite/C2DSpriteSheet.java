@@ -35,7 +35,9 @@ public class C2DSpriteSheet {
         }
         this.sprites = new ArrayList<>();
         this.texture = texture;
+        if (!this.texture.hasCreatedAlready()){
         this.texture.create();
+        }
         this.spriteWidth = spriteWidth;
         this.spriteHeight = spriteHeight;
         this.xCount = xCount;

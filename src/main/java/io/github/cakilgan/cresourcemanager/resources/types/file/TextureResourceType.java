@@ -7,7 +7,9 @@ public class TextureResourceType extends ResourceType<String, C2DTexture,C2DText
     @Override
     public boolean create() {
         if (getContext()!=null){
+            if (!getContext().hasCreatedAlready()){
             getContext().create();
+            }
             return true;
         }
         return false;
