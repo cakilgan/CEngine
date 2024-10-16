@@ -47,6 +47,7 @@ public class FlappyBirdGameScene extends CEScene {
     public List<Integer> scores = new ArrayList<>();
     @Override
     public void init() {
+        getWorld().getWorld().setGravity(new Vectors2D(0,-20f));
         if (new File("highscore.dat").exists()){
             File file = new File("highscore.dat");
             FileHelper helper = CakilganCore.createHelper(file);
