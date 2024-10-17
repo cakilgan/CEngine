@@ -34,6 +34,7 @@ public class CESceneSystem extends CakilganComponent implements CEComponent,Upda
     }
     public void setScene(CScene scene) {
         sceneIsChanged = true;
+        this.scene.dispose();
         this.scene = scene;
     }
 

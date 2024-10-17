@@ -5,6 +5,8 @@ import io.github.cakilgan.cgraphics.c2d.render.font.C2DFontRenderer;
 import io.github.cakilgan.cscriptengine.engines.MapFileScriptEngine;
 import io.github.cakilgan.cgraphics.c2d.render.anim.C2DAnimation;
 import io.github.cakilgan.cgraphics.c2d.render.sprite.C2DSprite;
+import io.github.cakilgan.data.comp.IntegerData;
+import io.github.cakilgan.data.defaults.CEDataParent;
 import io.github.cakilgan.engine.system.ecs.comp.CEOCameraLock;
 import io.github.cakilgan.engine.system.ecs.comp.CEOTransform;
 import io.github.cakilgan.cgraphics.c2d.render.font.C2DFont;
@@ -29,6 +31,7 @@ import java.io.File;
 import static io.github.cakilgan.game.scene.snakeGame.Snake.Direction.*;
 
 public class SnakeGameScene extends CEScene {
+    CEDataParent data;
     C2DMap map;
     C2DFontRenderer fontRenderer;
     Snake snake;
@@ -38,6 +41,8 @@ public class SnakeGameScene extends CEScene {
     CEObjectID food = new CEObjectID("food");
     @Override
     public void init() {
+        data = new CEDataParent();
+        data.deserialize(CakilganCore.createHelper(CEngine.RESOURCE_MANAGER.getDirectoryResource("gameRes").getDir("data").getFile("snakeGame.cdata").type.getContext()));
         getCamera().setCanMoveWithWASD(false);
         getCamera().getPosition().set(new Vector3f(960,-540,getCamera().getPosition().z));
         //map setup
@@ -81,21 +86,7 @@ public class SnakeGameScene extends CEScene {
         snake.addBody(new SnakeBody("bod",new Vector2f(48f,48f)));
         snake.setupObjects(this);
         snake.setMs(0.65f);
-        if (new File("highscore.dat").exists()){
-            File file = new File("highscore.dat");
-            FileHelper helper = CakilganCore.createHelper(file);
-            try {
-                helper.analyzeAndSetupTheFile();
-                for (String string : helper.readLines()) {
-                    if (string.contains("snakeGame:")){
-                        snake.scores.add(Integer.valueOf(string.substring(string.indexOf(":")+2)));
-                        break;
-                    }
-                }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        }
+        snake.scores.add((Integer) data.getData("highScore").get());
 
         C2DSprite sprite = CEngine.RESOURCE_MANAGER.getSpriteSheet("snakeAtlas").getSprites().get(9).copyWithoutTransform();
         sprite.setScale(new Vector2f(48,48));
@@ -196,23 +187,9 @@ public class SnakeGameScene extends CEScene {
     @Override
     public void dispose() {
         int highScore = snake.getHighScore();
-       FileHelper helper =  CakilganCore.createHelper(new File("highscore.dat"));
-        try {
-            int val = 0;
-            helper.analyzeAndSetupTheFile();
-            for (String string : helper.readLines()) {
-                if (string.startsWith("flappyBirdGame:")){
-                    String sub = string.substring(string.indexOf(":")+2);
-                    val = Integer.parseInt(sub);
-                }
-            }
-            helper.resetNotAppend();
-            helper.writeln("snakeGame: "+highScore);
-            helper.writeln("flappyBirdGame: "+val);
-        helper.exitAndSave();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        data.addData("highScore",new IntegerData("highScore",highScore));
+        data.serialize(CakilganCore.createHelper(CEngine.RESOURCE_MANAGER.getDirectoryResource("gameRes").getDir("data").getFile("snakeGame.cdata").type.getContext()));
+
         super.dispose();
     }
 

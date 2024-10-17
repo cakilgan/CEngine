@@ -26,6 +26,14 @@ public class FileHelper extends CakilganComponent {
         }
     }
 
+    public ArrayList<String> words() {
+        try {
+            return reader.words();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     private static class Reader{
         File file;
         BufferedReader reader;
@@ -176,6 +184,10 @@ public class FileHelper extends CakilganComponent {
         public String getWord(int wordNum) throws IOException {
             cs();
             return finalList.get(wordNum);
+        }
+        public ArrayList<String> words() throws IOException {
+            cs();
+            return finalList;
         }
         public <R ,T extends Pattern<R>>ArrayList<R> readPattern(T pattern) throws IOException {
             ArrayList<R> rtrn = new ArrayList<>();
