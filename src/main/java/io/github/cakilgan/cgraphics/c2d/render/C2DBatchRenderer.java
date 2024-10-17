@@ -4,12 +4,17 @@ import io.github.cakilgan.cgraphics.c2d.render.sprite.C2DSprite;
 import io.github.cakilgan.engine.system.CESceneComponent;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class C2DBatchRenderer implements CESceneComponent {
     private final int MAX_BATCH_SIZE = 1000;
     private List<C2DRenderBatch> batches;
+
+    public List<C2DRenderBatch> getBatches() {
+        return batches;
+    }
 
     public C2DBatchRenderer() {
         this.batches = new ArrayList<>();
@@ -19,6 +24,9 @@ public class C2DBatchRenderer implements CESceneComponent {
     public void add(C2DSprite sprite) {
         boolean added = false;
         for (C2DRenderBatch batch : batches) {
+            if (Arrays.asList(batch.getSprites()).contains(sprite)){
+                return;
+            }
             if (batch.hasRoom()&&batch.getZ_i()==sprite.getZPos()) {
                 C2DTexture texture = sprite.getTexture();
                 if (texture == null || (batch.haveTexture(texture) || batch.canAddSprite())){

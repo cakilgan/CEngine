@@ -5,6 +5,7 @@ import io.github.cakilgan.cgraphics.c2d.render.mesh.C2DGeo;
 import io.github.cakilgan.cgraphics.c2d.render.mesh.C2DQuad;
 import io.github.cakilgan.clogger.CLogger;
 import io.github.cakilgan.clogger.system.CLoggerSystem;
+import io.github.cakilgan.cresourcemanager.resources.DirectoryResource;
 import io.github.cakilgan.cresourcemanager.resources.FileResource;
 import io.github.cakilgan.cresourcemanager.resources.file.TextureFileResource;
 import io.github.cakilgan.engine.CEngine;
@@ -134,6 +135,55 @@ public class C2DSpriteSheet {
 
     public C2DTexture getTexture() {
         return texture;
+    }
+    public static void createASpriteSheet(DirectoryResource dir, int sprWidth, int sprHeight, int sprPerRow,FileResource saveTo){
+        String outputFilePath = "assets/spritesheet.png";
+
+        int spriteWidth =sprWidth;
+        int spriteHeight = sprHeight;
+        int spritesPerRow = sprPerRow;
+
+        FileResource[] spriteFiles = dir.getSubFiles().toArray(new FileResource[0]);
+
+        if (spriteFiles == null || spriteFiles.length == 0) {
+            LOGGER.warn("cannot found PNG files.");
+            return;
+        }
+
+        int totalSprites = spriteFiles.length;
+        int rows = (int) Math.ceil((double) totalSprites / spritesPerRow);
+        int sheetWidth = spriteWidth * spritesPerRow;
+        int sheetHeight = spriteHeight * rows;
+
+        BufferedImage spriteSheet = new BufferedImage(sheetWidth, sheetHeight, BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g2d = spriteSheet.createGraphics();
+
+        int x = 0;
+        int y = 0;
+
+        for (int i = 0; i < totalSprites; i++) {
+            try {
+                BufferedImage sprite = ImageIO.read(spriteFiles[i].type.getContext());
+                g2d.drawImage(sprite, x * spriteWidth, y * spriteHeight, null);
+                x++;
+
+                if (x >= spritesPerRow) {
+                    x = 0;
+                    y++;
+                }
+            } catch (IOException e) {
+                LOGGER.exc(e);
+            }
+        }
+
+        g2d.dispose();
+
+        try {
+            ImageIO.write(spriteSheet, "png", new File(saveTo.id.getID()));
+            LOGGER.info("sprite sheet is saved successfully.");
+        } catch (IOException e) {
+            LOGGER.exc(e,"An error occurred on sprite sheet writing.");
+        }
     }
     public static void createASpriteSheet(FileResource[] imgs,int sprWidth,int sprHeight,int sprPerRow,FileResource saveTo){
         String outputFilePath = "assets/spritesheet.png";

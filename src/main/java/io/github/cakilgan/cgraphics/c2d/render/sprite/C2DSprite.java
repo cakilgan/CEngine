@@ -46,6 +46,12 @@ public class C2DSprite extends CEOComponent implements IBindUnbind {
         return compPos;
     }
 
+    float zScale = 1f;
+
+    public void setZScale(float zScale) {
+        this.zScale = zScale;
+    }
+
     Vector2f position = new Vector2f();
     Vector2f scale = new Vector2f();
     float rotation = 0f;
@@ -58,6 +64,15 @@ public class C2DSprite extends CEOComponent implements IBindUnbind {
         return rotation;
     }
 
+    public void setZPosOnRun(float zpos){
+        if (mesh instanceof C2DGeo){
+            ((C2DGeo) mesh).setZpos(zpos);
+        }
+        getParent().removeComponent("sprite");
+        setFlag(true);
+        getParent().addComponent("sprite",this);
+
+    }
     public C2DSprite setZPos(float zpos){
         if (mesh instanceof C2DGeo){
             ((C2DGeo) mesh).setZpos(zpos);
@@ -204,6 +219,13 @@ public class C2DSprite extends CEOComponent implements IBindUnbind {
         return sprite;
     }
 
+    public boolean like(C2DSprite sprite){
+        return this.texture==sprite.texture&&
+                this.mesh == sprite.mesh&&
+                this.getColor() == sprite.getColor()&&
+                this.pointer == sprite.pointer&&
+                sprite.getDirection().equals(sprite.getDirection());
+    }
     public void set(C2DSprite sprite) {
         this.texture = sprite.texture;
         this.mesh = sprite.mesh;
@@ -214,5 +236,9 @@ public class C2DSprite extends CEOComponent implements IBindUnbind {
 
     public String getPointer() {
         return pointer;
+    }
+
+    public float getZScale() {
+        return zScale;
     }
 }

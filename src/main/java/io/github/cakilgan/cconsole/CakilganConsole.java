@@ -9,6 +9,7 @@ import io.github.cakilgan.core.io.FileHelper;
 import io.github.cakilgan.cresourcemanager.resources.DirectoryResource;
 import io.github.cakilgan.cresourcemanager.resources.FileResource;
 import io.github.cakilgan.engine.CEngine;
+import io.github.cakilgan.vc.VoiceSender;
 import javafx.application.Application;
 import javafx.beans.value.ObservableValue;
 import javafx.event.Event;
@@ -610,6 +611,23 @@ public class CakilganConsole extends Application {
                 return "move <sourcePath> <destPath>";
             }
         };
+        Command<String> connect = new Command<String>("connect") {
+            @Override
+            public void action(String key, List<String> values) {
+                try {
+                    int port = Integer.parseInt(values.get(0));
+                    String ip = values.get(1);
+
+                    new Thread(new VoiceSender(ip, port)).start();
+
+
+                    LOGGER.info("trying for port: "+port+" ip: "+ip);
+                }catch (Exception e){
+                    console.simulateCommand("print error in connect method please try again");
+                    LOGGER.excFalse(e,"error in console server thread: ");
+                }
+            }
+        };
         Command<String> changeScene = new Command<String>("setScene") {
             @Override
             public void action(String key, List<String> values) {
@@ -645,6 +663,8 @@ public class CakilganConsole extends Application {
         Command.defaultCommand(console,replaceCommand);
         Command.defaultCommand(console,calcCommand);
         Command.defaultCommand(console,moveCommand);
+
+        Command.defaultCommand(console,connect);
 
         Command.defaultCommand(console,changeScene);
 

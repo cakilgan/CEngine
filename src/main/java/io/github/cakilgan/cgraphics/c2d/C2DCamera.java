@@ -69,6 +69,29 @@ public class C2DCamera extends ICamera implements CESceneComponent {
         camera.setViewCode("uView");
         return camera;
     };
+        public static C2DCamera createIsometric(CEScene scene){
+            C2DCamera camera = new C2DCamera(scene,new Vector3f(),CEngine.WINDOW.getConfig().w,CEngine.WINDOW.getConfig().h);
+            //amera.position.set(0, 0, 10); // Kameranın yüksekliği
+            camera.front.set(0, -1, 1); // Yukarıdan eğik bakış
+            camera.up.set(0, 1, 0); // Yukarı doğru yön
+            camera.position.set(0, 20, 20); // Yüksekliği artır
+
+            //float width = 100f; // Haritanın genişliğine göre ayarla
+            //float height = 100f; // Haritanın yüksekliğine göre ayarla
+            camera.left = -1f;
+            camera.right = camera.width;
+            camera.bottom = -1f;
+            camera.top = camera.height;
+            CEngine.LOGGER.info("left: "+camera.left+
+                    " right: "+camera.right+
+                    " bottom: "+camera.bottom+
+                    " top: "+camera.top);
+            camera.zNear = -1400f;
+            camera.zFar = 1400f;
+
+
+            return camera;
+        }
     private float left, right, bottom, top;
 
     public C2DCamera(){

@@ -94,7 +94,7 @@ public class SnakeGameMenuScene extends CEScene {
         }else{
             button2Font.setColorize(new Vector3f(1,1,1));
         }
-        if (CEngine.MOUSE.isLeftClicked()){
+        if (CEngine.MOUSE.isLeftPress()){
             if (button.canClick){
                 fontRenderer.setText("pos: "+button.mousePos.x+" "+button.mousePos.y+" canClick: "+button.canClick+" clicked");
                 CEngine.SCENE.setScene(new SnakeGameScene());

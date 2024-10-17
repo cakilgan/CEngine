@@ -9,7 +9,8 @@ public abstract class ICamera {
     protected float zoom=45.0f,yaw=90.0f,pitch=0.0f;
     protected float zoomMin,zoomMax;
     protected float pitchMin,pitchMax;
-    protected float zNear,zFar;
+    public float zNear;
+    public float zFar;
     protected float sensivity;
     public abstract void init();
     public abstract void refresh();

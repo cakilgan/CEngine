@@ -185,10 +185,10 @@ public class C2DRenderBatch implements Comparable<C2DRenderBatch>{
         boolean isRotated = sprite.getRotation() != 0.0f||sprite.getRotation()!=360.0f;
         Matrix4f transformMatrix = new Matrix4f().identity();
         if(isRotated){
-            transformMatrix.translate(x_pos,y_pos,0f);
+            transformMatrix.translate(x_pos,y_pos,0);
             transformMatrix.rotate((float) Math.toRadians(sprite.getRotation()),
                     0,0,1f);
-            transformMatrix.scale(sprite.getScale().x,sprite.getScale().y,1);
+            transformMatrix.scale(sprite.getScale().x,sprite.getScale().y,sprite.getZScale());
         }
         // Add vertices with the appropriate properties
         float xAdd = 0.5f;
@@ -312,6 +312,10 @@ public class C2DRenderBatch implements Comparable<C2DRenderBatch>{
         sprites = null; // Help garbage collector
 
         CEngine.LOGGER.info("C2DRenderBatch disposed!");
+    }
+
+    public C2DSprite[] getSprites() {
+        return sprites;
     }
 }
 

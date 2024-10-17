@@ -47,26 +47,34 @@ public class C2DAnimation extends CEOComponent {
     }
 
     public void play(String code, float dt){
-        setPlaycode(code);
+        if (!playcode.equals(code)) {
+            // Yeni bir animasyon set ediliyorsa gecikmeyi sıfırla
+            setPlaycode(code);
+            spriteNum = 0; // İlk kareye dön
+            last_ms = ms;  // Animasyonu başlatmak için gecikmeyi sıfırla
+        }
+
         indexes = anims.get(playcode);
         spriteCount = indexes.length;
         if (reset){
             dt = 0f;
             reset =false;
         }
-        last_ms-= dt;
-        if (last_ms<=0){
+
+        last_ms -= dt;
+        if (last_ms <= 0) {
             last_ms = ms;
             spriteNum++;
-            if (spriteNum>=spriteCount){
-                spriteNum=0;
+            if (spriteNum >= spriteCount) {
+                spriteNum = 0;
             }
-            if (disable_first_frame_in_loop&&spriteNum==0){
+            if (disable_first_frame_in_loop && spriteNum == 0) {
                 return;
             }
             getParent().getSprite(spriteComponentCode).set(animSprites[indexes[spriteNum]]);
         }
     }
+
 
     int[] indexes;
     @Override

@@ -16,6 +16,7 @@ import io.github.cakilgan.engine.system.CESceneSystem;
 import io.github.cakilgan.engine.system.HasLogger;
 import io.github.cakilgan.engine.window.CEWindow;
 import io.github.cakilgan.engine.window.CEWindowConfig;
+import io.github.cakilgan.imgui.Imgui;
 
 import static org.lwjgl.glfw.GLFW.*;
 
@@ -38,6 +39,7 @@ public class CEngine implements CEComponent, HasLogger {
     public static final CETime TIME = MAIN_SYSTEM.addComponent(new CETime());
     public static final CESceneSystem SCENE = MAIN_SYSTEM.addComponent(new CESceneSystem());
     public static final CEConsole CONSOLE = MAIN_SYSTEM.addComponent(new CEConsole());
+    //public static final Imgui IMGUI = MAIN_SYSTEM.addComponent(new Imgui());
     public static final CGShader DEFAULT_SHADER,BATCH_SHADER,DEBUG_SHADER;
     static {
         DirectoryResource RESOURCES = (DirectoryResource) CEngine.RESOURCE_MANAGER.getResource("main");

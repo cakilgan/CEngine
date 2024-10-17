@@ -47,15 +47,8 @@ public class SnakeGameScene extends CEScene {
         //map.setDebugDrawAll();
         // ;
         //fps font setup.
-        C2DFont font = new C2DFont(
-                new C2DTexture(CEngine.RESOURCE_MANAGER.textures().getFile("font.png"),new Vector2i(1024,384)),
-                384/6,
-                1024/16,
-                16,
-                6,
-                0
-                ," !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~");
-        font.set(-16f,0);
+        C2DFont font = C2DFont.DEFAULT_FONT_2.copy();
+        font.set(-7f,0);
         fontRenderer = new C2DFontRenderer(font,new Vector2f(32f,32f));
         CEObject fpsObject= new CEObject(fpsObjectID);
         fpsObject.addTransform(new CEOTransform(new Vector2f(0,0),new Vector2f(16f*120,32),0));

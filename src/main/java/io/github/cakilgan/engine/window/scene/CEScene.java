@@ -6,6 +6,7 @@ import io.github.cakilgan.cgraphics.c2d.render.C2DBatchRenderer;
 import io.github.cakilgan.cgraphics.c2d.render.debug.C2DDebugRenderer;
 import io.github.cakilgan.engine.events.Event;
 import io.github.cakilgan.engine.system.ecs.CEObjectSystem;
+import io.github.cakilgan.engine.system.ecs.comp.CEODraggable;
 import io.github.cakilgan.engine.system.ecs.core.CEObject;
 import io.github.cakilgan.engine.system.ecs.util.CEObjectID;
 import io.github.cakilgan.physics.CEWorld;
@@ -28,6 +29,7 @@ public abstract class CEScene extends CScene {
         this.components.add(new C2DBatchRenderer());
         this.components.add(new C2DDebugRenderer(this));
         this.components.add(new CEWorld(new Vectors2D(0,-9.81D)));
+        this.components.add(new CEODraggable(this));
 
     }
 
@@ -51,6 +53,9 @@ public abstract class CEScene extends CScene {
     }
     public CEObject getObject(CEObjectID ID){
         return objectSystem().getObject(ID);
+    }
+    public CEODraggable getDraggable(){
+        return (CEODraggable) components.get(5);
     }
 
     public void setCamera(C2DCamera camera){

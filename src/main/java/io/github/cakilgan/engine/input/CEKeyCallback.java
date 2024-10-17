@@ -76,6 +76,15 @@ public class CEKeyCallback implements CEComponent {
         }
 
     }
+    public int activeLastKey(){
+        int rtrn = 0;
+        for (int i = 0; i < keys.length; i++) {
+            if (keys[i]){
+                rtrn = i;
+            }
+        }
+        return rtrn;
+    }
     public boolean isKeyHolding(int key){
         return keys[key];
     }

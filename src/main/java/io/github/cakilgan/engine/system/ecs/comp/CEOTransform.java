@@ -27,6 +27,11 @@ public class CEOTransform extends CEOComponent {
         this.scale = scale;
         this.rotation = rotation;
     }
+    public CEOTransform(){
+        this.pos  = new Vector2f();
+        this.scale = new Vector2f();
+        this.rotation = 0f;
+    }
     public Vector2f getScale() {
         return scale;
     }
@@ -41,5 +46,17 @@ public class CEOTransform extends CEOComponent {
         this.scale = transform.scale;
         this.rotation = transform.rotation;
         this.zPos = transform.zPos;
+    }
+    public boolean isOn(Vector2f point){
+        Vector2f bottomLeft = new Vector2f(pos.x - scale.x / 2, pos.y - scale.y / 2);
+
+        Vector2f topRight = new Vector2f(pos.x + scale.x / 2, pos.y + scale.y / 2);
+
+        if (point.x >= bottomLeft.x && point.x <= topRight.x &&
+                point.y >= bottomLeft.y && point.y <= topRight.y) {
+            return true;
+        } else {
+            return  false;
+        }
     }
 }
