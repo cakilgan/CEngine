@@ -6,6 +6,7 @@ import io.github.cakilgan.cgraphics.c2d.render.debug.C2DDebugRenderer;
 import io.github.cakilgan.clogger.system.CLoggerSystem;
 import io.github.cakilgan.core.serialization.CakilganComponent;
 import io.github.cakilgan.clogger.CLogger;
+import io.github.cakilgan.engine.CEngine;
 import io.github.cakilgan.engine.system.ecs.CEObjectSystem;
 import io.github.cakilgan.engine.window.scene.CEScene;
 import io.github.cakilgan.engine.window.scene.CScene;
@@ -32,9 +33,11 @@ public class CESceneSystem extends CakilganComponent implements CEComponent,Upda
             }
         };
     }
+    CScene oldScene;
     public void setScene(CScene scene) {
+        LOGGER.info(this.scene.getName()+" to dispose");
+        this.oldScene = this.scene;
         sceneIsChanged = true;
-        this.scene.dispose();
         this.scene = scene;
     }
 
@@ -49,6 +52,15 @@ public class CESceneSystem extends CakilganComponent implements CEComponent,Upda
     @Override
     public void loop() {
         if (sceneIsChanged){
+            if (oldScene!=null){
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        oldScene.dispose();
+                        oldScene = null;
+                    }
+                }).start();
+            }
             LOGGER.warn("scene is changed to -> "+this.scene.getName());
             scene.init();
             sceneIsChanged = false;

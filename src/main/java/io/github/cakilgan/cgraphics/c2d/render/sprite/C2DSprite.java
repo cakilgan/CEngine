@@ -176,12 +176,6 @@ public class C2DSprite extends CEOComponent implements IBindUnbind {
       texture.unbind();
     }
     public void dispose(){
-        if (mesh instanceof C2DGeo){
-            ((C2DGeo) mesh).dispose();
-        }
-        if (texture!=null){
-        texture.unbind();
-        }
         this.scale = null;
         this.position = null;
     }
